@@ -1,0 +1,10 @@
+#summary DWS Revival
+
+= Introduction =
+
+Delphi-language based scripting language.
+Not just for the web ;)
+
+= Details =
+
+Based on original DWS2 project by Matthias Ackermann.
