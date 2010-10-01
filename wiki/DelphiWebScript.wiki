@@ -5,6 +5,8 @@
 Delphi-language based scripting language.
 Not just for the web ;)
 
+To get started see FirstSteps.
+
 = Details =
 
 Based on original DWS2 project by Matthias Ackermann.
