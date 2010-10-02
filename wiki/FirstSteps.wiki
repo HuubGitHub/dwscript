@@ -98,6 +98,8 @@ You can also call functions using the TProgramInfo object:
 {{{
 Info.Func['IntToStr'].Call([345]);
 }}}
+keep in mind you need to compile the program beforehand, invoke BeginProgram before making your calls, and EndProgram when you're done.
+
 Another possibility to call a function is given below.
 {{{
 var
@@ -120,6 +122,8 @@ begin
    inf.Member['field'].Value := 'Hello';
    inf.Method['Free'].Call;
 }}}
+
+
 == Debugger ==
 
 If you want to debug a DWS script program you need a debugger component. A very simple debugger component is part of the DWSscript package: TdwsSimpleDebugger. To enable the debugging mode you have to assign an object that implements the IDebugger interface to TProgram.Debugger. For information about how to use the debugger please read the manual of the debugger component.
