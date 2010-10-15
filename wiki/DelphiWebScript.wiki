@@ -5,7 +5,7 @@
 Delphi-language based scripting language.
 Not just for the web ;)
 
-To get started see FirstSteps.
+To get started see FirstSteps, or jump to DocumentationIndex
 
 = Details =
 
