@@ -1,4 +1,5 @@
 #summary First steps with DWScript
+#labels Featured
 
 == First Steps with DelphiWebScript ==
 
