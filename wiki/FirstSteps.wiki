@@ -24,7 +24,7 @@ begin
 end;
 }}}
 
-This is a very simple example. For more detailed information about using DelphiWebScript please have a look at the demo programs and the units tests. You can alos check the snippets at [http://rosettacode.org/wiki/DWScript Rosetta Code].
+This is a very simple example. For more detailed information about using DelphiWebScript please have a look at the demo programs and the units tests. You can also check the snippets at [http://rosettacode.org/wiki/DWScript Rosetta Code].
 
 == Using TProgramInfo / IInfo ==
 
