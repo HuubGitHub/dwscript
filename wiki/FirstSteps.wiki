@@ -3,7 +3,7 @@
 
 == First Steps with DelphiWebScript ==
 
-If DelphiWebScript is installed correctly, a new tab "dws" appears in your Delphi component palette. To use DWSsript in your project execute the following instructions:
+If DelphiWebScript is installed correctly, a new tab "dws" appears in your Delphi component palette.
 
 1. Place a TDelphiWebScript component on your form.
 
@@ -13,25 +13,24 @@ If DelphiWebScript is installed correctly, a new tab "dws" appears in your Delph
 uses
    dwsExprs, ...
 var
-   prog: TProgram;
+   prog : IdwsProgram;
+   exec : IdwsProgramExecution;
 begin
    prog := DelphiWebScript1.Compile('PrintLn(''Hello World'');');
-   try
-      prog.Execute;
-      ShowMessage((prog.Result as TdwsDefaultResult).Text);
-   finally
-      prog.Free;
-   end;
+
+   exec := prog.Execute;
+
+   ShowMessage(exec.Result.ToString);
 end;
 }}}
 
-This is a very simple example. For more detailed information about using DelphiWebScript please have a look at the demo programs.
+This is a very simple example. For more detailed information about using DelphiWebScript please have a look at the demo programs and the units tests. You can alos check the snippets at [http://rosettacode.org/wiki/DWScript Rosetta Code].
 
 == Using TProgramInfo / IInfo ==
 
-If you declare functions or methods in a Tdws2Unit a TProgramInfo object is used to exchange data with the running script program. You can read and write parameteres, global variables and set the result value. But you can also call functions and create objects.
+If you declare functions or methods in a TdwsUnit a TProgramInfo object is used to exchange data with the running script program. You can read and write parameteres, global variables and set the result value. But you can also call functions and create objects.
 
-For the following explanations we assume that you have defined a function "Func" in a Tdws2Unit. The following code could be part of the OnEval event handler:
+For the following explanations we assume that you have defined a function "Func" in a TdwsUnit. The following code could be part of the OnEval event handler:
 
 {{{
 procedure TForm1.dwsUnitFunctionsFuncEval(Info: TProgramInfo);
@@ -127,9 +126,9 @@ begin
 
 == Debugger ==
 
-If you want to debug a DWS script program you need a debugger component. A very simple debugger component is part of the DWSscript package: TdwsSimpleDebugger. To enable the debugging mode you have to assign an object that implements the IDebugger interface to TProgram.Debugger. For information about how to use the debugger please read the manual of the debugger component.
+If you want to debug a DWS script program you need a debugger component. A ready-to-use debugger component is part of the DWSscript package: TdwsDebugger. To enable the debugging mode you have to assign an object that implements the IDebugger interface to IdwsProgram.Debugger.
 
-The Debugger can also be used to implement a profiler.
+The Debugger can also be used to implement a profiler, a ready-to-use sampling profiler is provided.
 
 == Filter ==
 
