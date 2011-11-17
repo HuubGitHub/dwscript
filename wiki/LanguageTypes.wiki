@@ -18,6 +18,10 @@ The following types are optional:
 
 = Enumerations =
 
+= Static Arrays =
+
+= Dynamic Arrays =
+
 = Classes =
 
 = Records =
