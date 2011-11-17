@@ -12,7 +12,7 @@ For Pascal users, you'll find below a summary of difference so you can get start
 
 See LanguageTypes for more details.
 
-DWScript base types are Integer, Float, Boolean and String.
+DWScript base types are Integer, Float, Boolean and String.<br>
 Optional base types are Variant, TComplex, TVector and TMatrix.
 
 Classes, arrays (fixed-size and dynamic), records (with methods), enumerations, meta-classes, interfaces and delegates are supported too.
@@ -35,21 +35,20 @@ All standard structured Pascal statements (if, while, for, repeat...) are suppor
 
 See LanguageOperators for more details.
 
-All standard Pascal operators are supported (+, `*`, <, mod, shl, etc.).
+* All standard Pascal operators are supported (+, `*`, <, mod, shl, etc.).
+* Compound assignment operators are supported too: +=, -=, etc.
+* Operators can be overloaded.
 
-In addition, compound assignment operators are supported too: +=, -=, etc.
-
-Operators can be overloaded.
-
-Since pointers don't exist in the language, the ^ and ^= operators are available for overloading.
+Since pointers don't exist in the language, the ^ and ^= operators are available for overloading.<br>
+Note that compound operators are currently not allowed on properties, due to ambiguity (should "obj.Prop += val" mean "obj.Prop := Add(obj.Prop, val)" or "obj.Prop.Add(val)" ?).
 
 == Code Structure ==
 
 Code structures is essentially standard with, the following additions:
-* variables as well as procedures can be declared inline
-* begin/end is optional for main program
-* var, const and type keywords have to be explicit before any var or type declaration in the main program (var/const blocks are allowed in procedure, before the first begin)
-* methods can be implemented inline (in the class declaration)
+ * variables as well as procedures can be declared inline
+ * begin/end is optional for main program
+ * var, const and type keywords have to be explicit before any var or type declaration in the main program (var/const blocks are allowed in procedure, before the first begin)
+ * methods can be implemented inline (in the class declaration)
 
 Variables are guaranteed to always be initialized.
 
