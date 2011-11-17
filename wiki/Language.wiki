@@ -2,7 +2,7 @@
 
 = Introduction =
 
-DWScript language is an Object Pascal dialect, it borrows most elements from Delphi, FreePascal and Prism, though with specificities of its own.
+DWScript language is an Object Pascal dialect, it borrows most elements from Delphi, FreePascal and Prism/Oxygene, though with specificities of its own.
 
 For Pascal users, you'll find below a summary of difference so you can get started right way.
 
@@ -17,6 +17,8 @@ Optional base types are Variant, TComplex, TVector and TMatrix.
 
 Classes, arrays (fixed-size and dynamic), records (with methods), enumerations, meta-classes, interfaces and delegates are supported too.
 
+Dynamic arrays support a set of pseudo-methods and operators (Add, Delete, IndexOf, Length, SetLength in...), and are true reference types.
+
 As of v2.2, sets, generics and closures are not yet supported.
 
 == Statements ==
@@ -27,6 +29,44 @@ All standard structured Pascal statements (if, while, for, repeat...) are suppor
 
 "Case of" statement support is generalized, it can operate on any data type.
 
+"For In" support as of v2.2 is restricted to enumerations and arrays.
+
 == Operators ==
 
 See LanguageOperators for more details.
+
+All standard Pascal operators are supported (+, *, <, mod, shl, etc.).
+
+In addition, compound assignment operators are supported too: +=, -=, *=, etc.
+
+Operators can be overloaded.
+
+== Code Structure ==
+
+Code structures is essentially standard with, the following additions:
+* variables as well as procedures can be declared inline
+* begin/end is optional for main program
+* var, const and type keywords have to be explicit before any var or type declaration in the main program (var/const blocks are allowed in procedure, before the first begin)
+* methods can be implemented inline (in the class declaration)
+
+Variables are guaranteed to always be initialized.
+
+Variable declaration can feature an assignment, variable type can be implicit, for instance
+{{{var i := 20;}}}
+is equivalent to
+{{{var i : Integer;
+i:=20;}}
+as well as
+{{{var i : Integer := 20;}}
+
+== Contracts Programming ==
+
+Contracts programming is supported with a syntax similar to the Oxygene language, procedures can have "require" and "ensure" sections, the "ensure" sections also support the "old" keyword.
+
+== Constructors ==
+
+Classic constructor syntax is supported, but you can also specify a default constructor and use the "new" keyword to instantiate classes.
+
+== Memory Model ==
+
+A garbage collector ensures that no script-objects or structures are leaked, however, you can invoke destructors explicitly. Attempts to access a destroyed object will always fail with an exception and is "safe".
