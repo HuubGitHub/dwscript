@@ -1,0 +1,32 @@
+#summary Describes the DWS dialect of Object Pascal.
+
+= Introduction =
+
+DWScript language is an Object Pascal dialect, it borrows most elements from Delphi, FreePascal and Prism, though with specificities of its own.
+
+For Pascal users, you'll find below a summary of difference so you can get started right way.
+
+= Dialect Specificities =
+
+== Data Types ==
+
+See LanguageTypes for more details.
+
+DWScript base types are Integer, Float, Boolean and String.
+Optional base types are Variant, TComplex, TVector and TMatrix.
+
+Classes, arrays (fixed-size and dynamic), records (with methods), enumerations, meta-classes, interfaces and delegates are supported too.
+
+As of v2.2, sets, generics and closures are not yet supported.
+
+== Statements ==
+
+See LanguageStatements for more details.
+
+All standard structured Pascal statements (if, while, for, repeat...) are supported with the exception of with, goto and label.
+
+"Case of" statement support is generalized, it can operate on any data type.
+
+== Operators ==
+
+See LanguageOperators for more details.
