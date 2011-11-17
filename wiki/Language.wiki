@@ -35,11 +35,13 @@ All standard structured Pascal statements (if, while, for, repeat...) are suppor
 
 See LanguageOperators for more details.
 
-All standard Pascal operators are supported (+, *, <, mod, shl, etc.).
+All standard Pascal operators are supported (+, `*`, <, mod, shl, etc.).
 
-In addition, compound assignment operators are supported too: +=, -=, *=, etc.
+In addition, compound assignment operators are supported too: +=, -=, etc.
 
 Operators can be overloaded.
+
+Since pointers don't exist in the language, the ^ and ^= operators are available for overloading.
 
 == Code Structure ==
 
