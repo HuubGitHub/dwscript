@@ -1,0 +1,27 @@
+#summary DWScript Language Data Types
+
+= Base Types =
+
+The following types are standard:
+* Integer : 64bit signed integer
+* Float : double-precisions floating-point
+* Boolean : True/False, maps to 1 and 0 when cas as Integer
+* String : mutable, copy-on-write, UTF-16 string
+
+The following types are optional:
+* Variant
+* COM support : OleVariant, ComVariant, ComVariantArray
+* RttiVariant : specializable interface to Delphi Rtti
+* TComplex : double-precision complex numbers (dwsMathComplexFunctions)
+* Vector : double-precision 4D homogeneous vector (dwsMath3DFunctions)
+* Vector : double-precision 4D matrix (dwsMath3DFunctions)
+
+= Enumerations =
+
+= Classes =
+
+= Records =
+
+= Interfaces =
+
+= Delegates =
