@@ -35,9 +35,9 @@ All standard structured Pascal statements (if, while, for, repeat...) are suppor
 
 See LanguageOperators for more details.
 
-* All standard Pascal operators are supported (+, `*`, <, mod, shl, etc.).
-* Compound assignment operators are supported too: +=, -=, etc.
-* Operators can be overloaded.
+ * All standard Pascal operators are supported (+, `*`, <, mod, shl, etc.).
+ * Compound assignment operators are supported too: +=, -=, etc.
+ * Operators can be overloaded.
 
 Since pointers don't exist in the language, the ^ and ^= operators are available for overloading.<br>
 Note that compound operators are currently not allowed on properties, due to ambiguity (should "obj.Prop += val" mean "obj.Prop := Add(obj.Prop, val)" or "obj.Prop.Add(val)" ?).
