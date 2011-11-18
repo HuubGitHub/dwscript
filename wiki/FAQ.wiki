@@ -4,7 +4,7 @@
   * *What Delphi versions are supported?*
   Delphi 2009 is the current minimum version. Development happens on Delphi XE however, so SVN version may temporarily become incompatible with previous versions.
      
-  FreePascal is currently not supported, though as FreePascal introduces support for recent Delphi language syntax, support could become possible.
+  FreePascal is currently not directly supported, though as FreePascal introduces support for recent Delphi language syntax, support could become possible. Check the [http://wiki.freepascal.org/DelphiWebScript FreePascal wiki] for more info on the state of FreePascal support.
 
   * *Is DWS compiled or interpreted?*
   The scripts are compiled into an expression tree, which is executed via virtual method calls. It behaves somewhere in between a pure compiler and a pure interpreter. Some sub-expressions may actually be fully compiled (f.i. with the asm extension).
