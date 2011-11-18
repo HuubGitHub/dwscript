@@ -8,11 +8,15 @@ For Pascal users, you'll find below a summary of difference so you can get start
 
 = Dialect Specificities =
 
+== Memory Model ==
+
+A *garbage collector* ensures that no script-objects or structures are leaked, however, you can invoke destructors explicitly. Attempts to access a destroyed object will fail with an exception and is "safe".
+
 == Data Types ==
 
 See LanguageTypes for more details.
 
-DWScript base types are Integer, Float, Boolean and String.<br>
+DWScript base types are *Integer*, *Float*, *Boolean* and *String*.<br>
 Optional base types are Variant, TComplex, TVector and TMatrix.
 
 Classes, arrays (fixed-size and dynamic), records (with methods), enumerations, meta-classes, interfaces and delegates are supported too.
@@ -25,11 +29,9 @@ As of v2.2, sets, generics and closures are not yet supported.
 
 See LanguageStatements for more details.
 
-All standard structured Pascal statements (if, while, for, repeat...) are supported with the exception of with, goto and label.
-
-"Case of" statement support is generalized, it can operate on any data type.
-
-"For In" support as of v2.2 is restricted to enumerations and arrays.
+ * All standard structured Pascal statements (if, while, for, repeat...) are supported with the exception of with, goto and label.
+ * "Case of" statement support is generalized: it can operate on any data type.
+ * "For...in" support as of v2.2 is limited to enumerations and arrays.
 
 == Operators ==
 
@@ -44,21 +46,27 @@ Note that compound operators are currently not allowed on properties, due to amb
 
 == Code Structure ==
 
-Code structures is essentially standard with, the following additions:
- * variables as well as procedures can be declared inline
- * begin/end is optional for main program
- * var, const and type keywords have to be explicit before any var or type declaration in the main program (var/const blocks are allowed in procedure, before the first begin)
- * methods can be implemented inline (in the class declaration)
+Code structures is essentially standard Pascal with, the following specificities:
+ * variables, constants and procedures can be declared inline.
+ * begin/end is optional for main program code.
+ * var, const and type keywords have to be explicit before any var or type declaration in the main program (var/const blocks are allowed in procedure, before the first begin).
+ * methods can be implemented inline (in the class declaration).
 
 Variables are guaranteed to always be initialized.
 
-Variable declaration can feature an assignment, variable type can be implicit, for instance
-{{{var i := 20;}}}
+Variable declaration can feature an assignment, variable type can be inferred, for instance
+{{{
+var i := 20;
+}}}
 is equivalent to
-{{{var i : Integer;
-i:=20;}}
+{{{
+var i : Integer;
+i:=20;
+}}}
 as well as
-{{{var i : Integer := 20;}}
+{{{
+var i : Integer := 20;
+}}}
 
 == Contracts Programming ==
 
@@ -68,6 +76,28 @@ Contracts programming is supported with a syntax similar to the Oxygene language
 
 Classic constructor syntax is supported, but you can also specify a default constructor and use the "new" keyword to instantiate classes.
 
-== Memory Model ==
+Both lines of code below are equivalent:
+{{{
+obj := TMyObject.Create(parameter);
+obj := new TMyObject(parameter);
+}}}
 
-A garbage collector ensures that no script-objects or structures are leaked, however, you can invoke destructors explicitly. Attempts to access a destroyed object will always fail with an exception and is "safe".
+== Delegates ==
+
+Function pointers are unified, there is no distinction between standalone function and method pointers.
+
+For instance the following code is valid:
+{{{
+type TMyFunction = function (i : Integer) : String;
+
+var v : TMyFunction;
+
+v := IntToStr;
+
+v := someObject.SomeMethod;
+
+v := somInterface.SomeMethod;
+}}}
+As long as the function or method prototype matches.
+
+You can use the '@' operator to explicit a function reference to remove ambiguity.
