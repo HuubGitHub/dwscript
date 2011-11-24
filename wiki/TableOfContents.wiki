@@ -3,11 +3,16 @@
  * [FirstSteps First Steps]
  * Language Reference
    * [Language Introduction]
-   * [LanguageTypes Types]
+   * Types
      * [BaseTypes Base Types]
      * [Enumerations]
      * [StaticArrays Static Arrays]
      * [DynamicArrays Dynamic Arrays]
+     * [Classes]
+     * [Records]
+     * [Interfaces]
+     * [Delegates]
  * [FAQ]
  * Components
+   * TDelphiWebScript
    * TdwsRestrictedFileSystem
