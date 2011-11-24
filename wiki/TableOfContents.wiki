@@ -6,6 +6,8 @@
    * [LanguageTypes Types]
      * [BaseTypes Base Types]
      * [Enumerations]
+     * [StaticArrays Static Arrays]
+     * [DynamicArrays Dynamic Arrays]
  * [FAQ]
  * Components
    * TdwsRestrictedFileSystem
