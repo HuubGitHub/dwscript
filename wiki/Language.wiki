@@ -40,6 +40,7 @@ See LanguageOperators for more details.
 
  * All standard Pascal operators are supported (+, `*`, <, mod, shl, etc.).
  * Compound assignment operators are supported too: +=, -=, etc.
+ * The *implies* operator is supported.
  * Operators can be overloaded.
 
 Since pointers don't exist in the language, the ^ and ^= operators are available for overloading.<br>
