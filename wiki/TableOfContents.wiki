@@ -17,7 +17,7 @@
    * [Operators]
  * [FAQ]
  * Components
-   * TDelphiWebScript
+   * [TDelphiWebScript]
    * TdwsUnit
    * TdwsHtmlFilter
    * TdwsRestrictedFileSystem
