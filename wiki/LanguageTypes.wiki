@@ -3,29 +3,88 @@
 == Base Types ==
 
 The following types are standard:
- * Integer : 64bit signed integer
- * Float : double-precisions floating-point
- * Boolean : True/False, maps to 1 and 0 when cas as Integer
- * String : mutable, copy-on-write, UTF-16 string
+ * *Integer* : 64bit signed integer
+ * *Float* : double-precision floating-point
+ * *Boolean* : True/False, maps to 1 and 0 when cas as Integer
+ * *String* : mutable, copy-on-write, UTF-16 string
 
 The following types are optional:
  * Variant
  * COM support : OleVariant, ComVariant, ComVariantArray
- * RttiVariant : specializable interface to Delphi Rtti
+ * RttiVariant : specializable interface to Delphi Rtti types
  * TComplex : double-precision complex numbers (dwsMathComplexFunctions)
  * Vector : double-precision 4D homogeneous vector (dwsMath3DFunctions)
  * Vector : double-precision 4D matrix (dwsMath3DFunctions)
 
 == Enumerations ==
 
+Enumerations are supported, with or without explicit values.
+
+{{{
+type TMyEnumeration = (firstEnum, secondEnum, thirdEnum);
+type TMyExplicitEnum = (eeOne = 1, eeTwo = 3, eeFive = 5);
+}}}
+
+An enumeration element can be referred directly (_eeOne_) or prefixed with the enumeration type (_TMyExplicitEnum.eeOne_).
+
 == Static Arrays ==
+
+Static arrays are supported as value types, they have a fixed size with user-specified bounds:
+
+{{{
+type TZeroToTen = array [0..10] of Integer;
+type TTenToTwenty = array [10..20] of String;
+}}}
+
+Multi-dimensional arrays are supported, with two forms:
+
+{{{
+type TCompactForm = array [1..3, 1..5] of Float;
+type TVerboseForm = array [1..3] of array [1..5] of Float;
+}}}
+
+They support the special functions/methods Low, High and Length. You can use them as either functions (legacy) or methods _Low(array)_ and _array.Low_ are equivalent.
+
+You can use the *in* and *not in* operators to test the presence of an element in a static array.
 
 == Dynamic Arrays ==
 
+Dynamic arrays are supported as reference types, they are declared without bounds. Their Low bounds is always zero.
+
+In addition to Low, High and Length, they also support the following pseudo-methods:
+ * SetLength : defines the length of a dynamic array
+ * Add/Push : increases Length by one and adds an item at the end of the array.
+ * Delete : deletes the item at the specified index and reduces Length by one.
+ * IndexOf : returns the index of an item, returns a negative value if not found.
+ * Swap : swaps to items of specified indexes.
+ * Reverse : reverses the order of the items.
+  
+You can use the *in* and *not in* operators to test the presence of an element in a static array.
+
 == Classes ==
+
+Classes all derive from the root TObject class and follow the classic Delphi syntax.
+
+Named constructors are supported, as well as class methods, meta-classes, virtual methods, properties and destructors. Properties can optionally be array properties, and can feature an explicit index.
+
+Visibilities are private, protected, public and published.
+
+Classes can implement Interfaces.
+
+You can also declare class methods with "method" as in the Oxygene language, in addition to "procedure" and "function".
 
 == Records ==
 
+Records are supported using the classic Delphi syntax.
+
+Methods and properties of records are supported too, including "class" methods.
+
 == Interfaces ==
 
+Interfaces are supported using the classic Delphi syntax.
+
+Interfaces can define properties, which are syntax sugar to their methods.
+
 == Delegates ==
+
+Delegates are supported and unified.
