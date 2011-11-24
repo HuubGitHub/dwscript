@@ -1,0 +1,12 @@
+#summary DWScript Enumerations.
+
+== Enumerations ==
+
+Enumerations are supported, with or without explicit values.
+
+{{{
+type TMyEnumeration = (firstEnum, secondEnum, thirdEnum);
+type TMyExplicitEnum = (eeOne = 1, eeTwo = 3, eeFive = 5);
+}}}
+
+An enumeration element can be referred directly (_eeOne_) or prefixed with the enumeration type (_TMyExplicitEnum.eeOne_).
