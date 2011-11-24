@@ -5,7 +5,7 @@
    * [Language Introduction]
    * [LanguageTypes Types]
      * [LanguageBaseTypes Base Types]
-     * [LanguageEnumerations Enumerations]
+     * [Enumerations]
  * [FAQ]
  * Components
    * TdwsRestrictedFileSystem
