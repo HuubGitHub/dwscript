@@ -1,4 +1,11 @@
 #summary DWScript Table of Contents
 
- * [Language Language Reference]
-  * [LanguageTypes Types]
+ * [FirstSteps First Steps]
+ * Language Reference
+   * [Language Introduction]
+   * [LanguageTypes Types]
+     * [LanguageBaseTypes Base Types]
+     * [LanguageEnumerations Enumerations]
+ * [FAQ]
+ * Components
+   * TdwsRestrictedFileSystem
