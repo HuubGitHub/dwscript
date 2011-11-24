@@ -1,4 +1,5 @@
 #summary DWScript Language Data Types
+#sidebar TableOfContents
 
  * [LanguageBaseTypes Base Types] (Integer, Float, String, Boolean, etc.)
  * [Enumerations]
