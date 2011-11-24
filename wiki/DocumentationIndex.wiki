@@ -1,9 +1,0 @@
-#summary DWScript Documentation index
-
-= DWScript Language =
-
-todo
-
-= Components =
-
-TdwsRestrictedFileSystem
