@@ -1,0 +1,5 @@
+#summary DWScript Delegates
+
+== Delegates ==
+
+Delegates are supported and unified.
