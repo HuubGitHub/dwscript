@@ -138,7 +138,7 @@ The input of the DWS compiler is a script program. But if there is a filter the 
 
 == Connector ==
 
-The "naked" DWS component can't talk to the outer world. You have to add functions to a Tdws2Unit component or to assign libraries. But you may also want to use COM objects in your DWSII scripts or to call functions of your Delphi program. To connect DWS to external technologies like COM or RMI the Connector concept was introduced.
+The "naked" DWS component can't talk to the outer world. You have to add functions to a TdwsUnit component or to assign libraries. But you may also want to use COM objects in your DWS scripts or to call functions of your Delphi program. To connect DWS to external technologies like COM or RMI the Connector concept was introduced.
 
 A connector is a component that is assigned to the TDelphiWebScript component. If the compiler finds an element that belongs to a connector it asks the connector to handle it. The connector returns the "executable code" needed to use this element. The DWS compiler inserts that "executable code" into the already compiled code not knowing what it exactly does.
 
