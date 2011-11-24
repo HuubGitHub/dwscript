@@ -1,4 +1,5 @@
 #summary DWScript base types
+#sidebar TableOfContents
 
 == Base Types ==
 
