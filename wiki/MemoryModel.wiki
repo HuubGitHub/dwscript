@@ -1,0 +1,9 @@
+#summary DWScript Memory Model
+
+= Memory Model =
+
+A garbage collector ensures that no script-objects or structures are leaked, however, invoking destructors explicitly on object is supported.
+
+Once an object has been destroyed, further attempts to access it or its methods will fail with a guaranteed exception and is considered "safe" (no memory corruption can occur).
+
+Destroying objects can be used to release memory of large objects immediately.
