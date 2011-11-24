@@ -10,3 +10,5 @@ type TMyExplicitEnum = (eeOne = 1, eeTwo = 3, eeFive = 5);
 }}}
 
 An enumeration element can be referred directly (_eeOne_) or prefixed with the enumeration type (_TMyExplicitEnum.eeOne_).
+
+Enumerations can be cast to and from Integer.
