@@ -2,6 +2,8 @@
 
 == Static Arrays ==
 
+See also [DynamicArrays dynamic arrays].
+
 Static arrays are supported as value types, they have a fixed size with user-specified bounds:
 
 {{{
