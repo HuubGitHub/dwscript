@@ -12,6 +12,9 @@
      * [Records]
      * [Interfaces]
      * [Delegates]
+   * [MemoryModel Memory Model]
+   * [Statements]
+   * [Operators]
  * [FAQ]
  * Components
    * TDelphiWebScript
