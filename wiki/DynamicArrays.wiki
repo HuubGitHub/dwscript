@@ -8,8 +8,8 @@ Dynamic arrays are supported as reference types, they are declared without bound
 
 In addition to Low, High and Length, they also support the following pseudo-methods:
  * SetLength(newLength) : defines the length of a dynamic array
- * Add(item)/Push(item) : increases Length by one and adds an item at the end of the array.
- * Copy(startIndex[, count]) : creates a new dynamic array containing coun items from startIndex, if count isn't specified, copies to the end of the array.
+ * Add(item) / Push(item) : increases Length by one and adds an item at the end of the array.
+ * Copy(startIndex`[`, count`]`) : creates a new dynamic array containing coun items from startIndex, if count isn't specified, copies to the end of the array.
  * Delete(index) : deletes the item at the specified index and reduces Length by one.
  * IndexOf(item) : returns the index of an item, returns a negative value if not found.
  * Swap(index1, index2) : swaps to items of specified indexes.
