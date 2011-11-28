@@ -51,6 +51,6 @@ Explicit Unicode characters can be specified by using # followed by an integer c
 
 {{{
 Print('Hello'#13#$0D'World');
-}}
+}}}
 
 Will print 'Hello' followed by CR+LF (ASCII code 13 and 10), followed by 'World'
