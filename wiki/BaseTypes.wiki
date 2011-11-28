@@ -3,10 +3,10 @@
 == Base Types ==
 
 The following types are standard:
- * *Integer* : 64bit signed integer
- * *Float* : double-precision floating-point
- * *Boolean* : True/False, maps to 1 and 0 when cas as Integer
- * *String* : mutable, copy-on-write, UTF-16 string
+ * *[BaseTypes#Integer Integer]* : 64bit signed integer
+ * *[BaseTypes#Float Float]* : double-precision floating-point
+ * *[BaseTypes#Boolean Boolean]* : True/False, maps to 1 and 0 when cas as Integer
+ * *[BaseTypes#String String]* : mutable, copy-on-write, UTF-16 string
 
 The following types are optional:
  * Variant
@@ -15,3 +15,11 @@ The following types are optional:
  * TComplex : double-precision complex numbers (dwsMathComplexFunctions)
  * Vector : double-precision 4D homogeneous vector (dwsMath3DFunctions)
  * Vector : double-precision 4D matrix (dwsMath3DFunctions)
+
+== Literals/Constants ==
+
+=== Integer ===
+
+=== Float ===
+
+=== String ===
