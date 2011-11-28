@@ -14,6 +14,7 @@
      * [Delegates]
    * [MemoryModel Memory Model]
    * [Statements]
+   * [Comments]
    * [Operators]
  * [FAQ]
  * Components
