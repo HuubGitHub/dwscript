@@ -5,7 +5,7 @@
 The following types are standard:
  * *[BaseTypes#Integer Integer]* : 64bit signed integer
  * *[BaseTypes#Float Float]* : double-precision floating-point
- * *[BaseTypes#Boolean Boolean]* : True/False, maps to 1 and 0 when cas as Integer
+ * *[BaseTypes#Boolean Boolean]* : True/False
  * *[BaseTypes#String String]* : mutable, copy-on-write, UTF-16 string
 
 The following types are optional:
@@ -20,6 +20,37 @@ The following types are optional:
 
 === Integer ===
 
+Decimal notation: 123, -456
+
+Hexadecimal notation: $1AF
+
 === Float ===
 
+Presence of a '.' differentiates from an Integer.
+
+Normal notation: 45.2304
+
+Exponential notation: 1.256e23
+
+=== Boolean ===
+
+Possible values are _*True*_ and _*False*_, case insensitive.
+
+When casting a Boolean as Integer, by convention _True_ maps to 1, _False_ maps to 0.
+
+When casting an Integer as Boolean, 0 maps to _False_, all other values map to _True_.
+
 === String ===
+
+Strings can be delimited by a single *'* or a double-quote *"*.
+
+In single-quoted string, a single quote can be expressed by doubling it.
+In a double-quoted string, a double-quote can be expressed by doubling it.
+
+Explicit Unicode characters can be specified by using # followed by an integer codepoint (decimal or hexadecimal). Characters specified this way are always understood as Unicode codepoint.
+
+{{{
+Print('Hello'#13#$0D'World');
+}}
+
+Will print 'Hello' followed by CR+LF (ASCII code 13 and 10), followed by 'World'
