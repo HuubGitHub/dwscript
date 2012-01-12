@@ -11,7 +11,7 @@ In addition to *`Low`*, *`High`* and *`Length`*, they also support the following
  * *`Clear`*() : empties the array (equivalent to `SetLength`(0))
  * *`Copy`*(startIndex`[`, count`]`) : creates a new dynamic array containing coun items from startIndex, if count isn't specified, copies to the end of the array.
  * *`Delete`*(index) : deletes the item at the specified index and reduces Length by one.
- * *`IndexOf`*(item) : returns the index of an item, returns a negative value if not found.
+ * *`IndexOf`*(`[startIndex, ]`item) : returns the index of an item, returns a negative value if not found.
  * *`SetLength`*(newLength) : defines the length of a dynamic array
  * *`Swap`*(index1, index2) : swaps to items of specified indexes.
  * *`Reverse`*() : reverses the order of the items.
