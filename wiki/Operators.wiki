@@ -26,7 +26,7 @@
 || implies || Logical IMPLIES ||
 || is || Class, interface type test ||
 || as || Class, interfaces safe cast ||
-|| implements || Tests in a class implements an interface ||
+|| implements || Tests if a class implements an interface ||
 || = || Equality test ||
 || <> || Difference test ||
 || < || Lesser test ||
@@ -39,7 +39,7 @@
 || := || Assignment ||
 || += || Addition & concatenation compound operator ||
 || -= || Subtraction compound operator ||
-|| *= || Multiplication compound operator ||
+|| `*=` || Multiplication compound operator ||
 || /= || Division compound operator ||
 
 ===Available operators===
