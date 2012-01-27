@@ -27,7 +27,7 @@
      * [WhileDo while do]
    * [Comments]
    * [Operators]
-   * [Directives]
+   * Directives
      * [ConditionalCompilation conditional compilation]
      * [InclusionDirectives inclusions]
      * [MessageDirectives error and messages]
