@@ -1,0 +1,24 @@
+#summary Conditional compilation directives
+
+== Conditional Defines ==
+
+ * *`{$DEFINE NAME_TOKEN}`* : define _NAME_TOKEN_ conditional
+ * *`{$UNDEF NAME_TOKEN}`* : un-defines _NAME_TOKEN_ conditional
+
+== Conditional Compilation ==
+
+ * *`{$IFDEF NAME_TOKEN}`*
+ * *`{$IFNDEF NAME_TOKEN}`*
+ * *`{$IF expression}`*
+ * *`{$ELSE}`*
+ * *`{$ENDIF}`*
+
+== Conditional expressions ==
+
+*`$IF`* allows to specify a [BaseTypes#Boolean Boolean] expression to control conditional compilation, that expression can use any constant defined previously, as well as any stateless built-in function.
+
+It can also invoke the following special functions:
+ * *`Defined(nameToken : String)`* : returns true if the token is defined when the compilation reaches the expression.
+ * *`Declared(symbolName : String)`* : returns true if there is a symbol name in scope when compilation reaches the expression.
+
+Note that the above special functions can also be used in regular code, but then, they'll be evaluated at runtime, when compilation has been completed.
