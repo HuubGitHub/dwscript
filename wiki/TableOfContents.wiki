@@ -27,6 +27,10 @@
      * [WhileDo while do]
    * [Comments]
    * [Operators]
+   * [Directives]
+     * [ConditionalCompilation conditional compilation]
+     * [InclusionDirectives inclusions]
+     * [MessageDirectives error and messages]
  * [FAQ]
  * Components
    * [TDelphiWebScript]
