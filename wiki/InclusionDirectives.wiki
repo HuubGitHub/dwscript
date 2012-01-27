@@ -1,0 +1,10 @@
+#summary Code inclusion compiler directives.
+
+== Inclusion directives ==
+
+ * *`{$I 'filename'}`* : includes the specified file "verbatim" in the source.
+ * *`{$INCLUDE 'filename'}`* : includes the specified file "verbatim" in the source.
+ * *`{$INCLUDE_ONCE 'filename'}`* : includes the specified "verbatim" in the source only if it hasn't already been included (directly or through inclusion).
+ * *`{$F 'filename'}`* : includes the specified file in the source after applying the filter on it.
+ * *`{$FILTER 'filename'}`* : includes the specified file in the source after applying the filter on it.
+
