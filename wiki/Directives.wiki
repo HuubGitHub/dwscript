@@ -4,6 +4,6 @@
 
 Directives provide means to control compiler behavior.
 
- * [ConditionalCompilation Conditional compilation]
- * [InclusionDirectives Code Inclusions]
- * [MessageDirectives Errors and messages]
+ * [ConditionalCompilation Conditional compilation] : $IFDEF, $IF, $ELSE, etc.
+ * [InclusionDirectives Code Inclusions] : $I, $INCLUDE_ONCE, $FILTER, etc.
+ * [MessageDirectives Errors and messages] : $HINT, $FATAL, etc.
