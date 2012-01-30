@@ -11,7 +11,7 @@ Four forms of loops are supported:
 
 All these loops can also be controlled by the following statements:
 
- * *break* : exits the current loop
- * *continue* : jump to the next iteration of loop
+ * *`break`* : exits the current loop
+ * *`continue`* : jump to the next iteration of loop
 
-Note that *break* and *continue* are statements and reserved names, and not function like in classic Delphi. It means that they're always and unambiguously loop control instructions, and can't be overloaded by user functions or variables.
+Note that *`break`* and *`continue`* are statements and reserved names, and not function like in classic Delphi. It means that they're always and unambiguously loop control instructions, and can't be overloaded by user functions or variables.
