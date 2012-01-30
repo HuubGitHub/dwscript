@@ -3,7 +3,7 @@
  * [FirstSteps First Steps]
  * Language Reference
    * [Language Introduction]
-   * Types
+   * [Types]
      * [BaseTypes Base Types]
      * [Enumerations]
      * [StaticArrays Static Arrays]
