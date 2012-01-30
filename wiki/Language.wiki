@@ -48,7 +48,7 @@ Note that compound operators are currently not allowed on properties, due to amb
 
 == Code Structure ==
 
-Code structure is essentially standard Pascal with the following specificities:
+[SourceStructure Source code structure] is essentially standard Pascal with the following specificities:
  * variables, constants and procedures can be declared inline.
  * begin/end is optional for main program code.
  * var, const and type keywords have to be explicit before any var or type declaration in the main program (var/const blocks are allowed in procedure, before the first begin).
