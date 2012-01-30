@@ -1,6 +1,6 @@
 #summary DWScript Language Types.
 
-== Introduction ==
+== Language Types ==
 
  * [BaseTypes Base Types]
  * [Enumerations]
