@@ -1,0 +1,17 @@
+#summary Loop Control statements.
+
+== Loop Control ==
+
+Four forms of loops are supported:
+
+ * [ForInDo for in do] : loop on elements in a sequence
+ * [ForToDo for to/downto do] : loop on an integer variable
+ * [RepeatUntil repeat until] : loop on a final condition
+ * [WhileDo while do] : loop on an initial condition
+
+All these loops can also be controlled by the following statements:
+
+ * *break* : exits the current loop
+ * *continue* : jump to the next iteration of loop
+
+Note that *break* and *continue* are statements and reserved names, and not function like in classic Delphi. It means that they're always and unambiguously loop control instructions, and can't be overloaded by user functions or variables.
