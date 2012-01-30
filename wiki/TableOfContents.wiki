@@ -3,6 +3,7 @@
  * [FirstSteps First Steps]
  * Language Reference
    * [Language Introduction]
+   * [SourceStructure Source Structure]
    * [Types]
      * [BaseTypes Base Types]
      * [Enumerations]
