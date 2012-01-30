@@ -18,3 +18,10 @@ In addition to *`Low`*, *`High`* and *`Length`*, they also support the following
  * *`Reverse`*() : reverses the order of the items.
   
 You can use the *in* and *not in* operators to test the presence of an element in a static array.
+
+Dynamic arrays can be initialized from inline or constant static arrays:
+{{{
+var dynamicArray : array of String;
+...
+dynamicArray := ['one', 'two', 'three'];
+}}}
