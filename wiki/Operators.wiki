@@ -16,6 +16,7 @@
 || / || Division (floating-point) ||
 || div || Euclidean division ||
 || mod || Remainder of Euclidean division ||
+|| sar || Bitwise shift arithmetic right ||
 || shr || Bitwise shift right ||
 || shl || Bitwise shift left ||
 || in || Present in an array, set ||
