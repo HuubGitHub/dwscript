@@ -2,8 +2,12 @@
 
 == Message control ==
 
- * *`{$WARNINGS ON/OFF}`* : enable or disable compiler warnings.
- * *`{$HINTS ON/OFF}`* : enable or disable compiler warnings.
+ * *`{$WARNINGS ON|OFF}`* : enable or disable compiler warnings.
+ * *`{$HINTS ON|OFF|NORMAL|STRICT}`* : controls compiler hints.
+   * *`ON`* : enables hints, at the level defined in the _`Config.HintsLevel`_
+   * *`OFF`* : disables hints
+   * *`NORMAL`* : enables hints at the normal level
+   * *`STRICT`* : enables hints at the strict level
 
 == Message command ==
 
