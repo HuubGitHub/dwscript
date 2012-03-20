@@ -10,7 +10,7 @@ In addition to *`Low`*, *`High`*, *`Length`* and *`Count`*, they also support th
  * *`Add`*(item) / *Push*(item) : increases Length by one and adds an item at the end of the array.
  * *`Clear`*() : empties the array (equivalent to `SetLength`(0))
  * *`Copy`*(startIndex`[`, count`]`) : creates a new dynamic array containing coun items from startIndex, if count isn't specified, copies to the end of the array.
- * *`Delete`*(index) : deletes the item at the specified index and reduces Length by one.
+ * *`Delete`*(index`[`, count`]`) : deletes the item at the specified index and reduces Length by count (default one).
  * *`IndexOf`*(`[startIndex, ]`item) : returns the index of an item, returns a negative value if not found.
  * *`Insert`*(index, item) : insert an item at the specified index.
  * *`Pop`*() : returns the last item and removes it from the array.
