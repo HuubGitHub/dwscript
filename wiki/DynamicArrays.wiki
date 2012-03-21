@@ -13,6 +13,7 @@ In addition to *`Low`*, *`High`*, *`Length`* and *`Count`*, they also support th
  * *`Delete`*(index`[`, count`]`) : deletes the item at the specified index and reduces Length by count (default one).
  * *`IndexOf`*(`[startIndex, ]`item) : returns the index of an item, returns a negative value if not found.
  * *`Insert`*(index, item) : insert an item at the specified index.
+ * *`Peek`*() : returns the last item.
  * *`Pop`*() : returns the last item and removes it from the array.
  * *`SetLength`*(newLength) : defines the length of a dynamic array
  * *`Swap`*(index1, index2) : swaps to items of specified indexes.
