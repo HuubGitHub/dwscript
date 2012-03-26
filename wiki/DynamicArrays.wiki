@@ -7,7 +7,7 @@ See also [StaticArrays static arrays].
 Dynamic arrays are supported as reference types, they are declared without bounds. Their lower bound is always zero.
 
 In addition to *`Low`*, *`High`*, *`Length`* and *`Count`*, they also support the following pseudo-methods:
- * *`Add`*(item) / *Push*(item) : increases Length by one and adds an item at the end of the array.
+ * *`Add`*(item [,...}) / *Push*(item [,...]) : increases Length by one and adds one or more item at the end of the array, can also add arrays (concatenation).
  * *`Clear`*() : empties the array (equivalent to `SetLength`(0))
  * *`Copy`*(startIndex`[`, count`]`) : creates a new dynamic array containing count items from startIndex, if count isn't specified, copies to the end of the array.
  * *`Delete`*(index`[`, count`]`) : deletes the item at the specified index and reduces Length by count (default one).
