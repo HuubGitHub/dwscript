@@ -44,7 +44,7 @@ When casting an Integer as Boolean, 0 maps to _False_, all other values map to _
 
 Strings can be delimited by a single *'* or a double-quote *"*.
 
-In single-quoted string, a single quote can be expressed by doubling it.
+In a single-quoted string, a single quote can be expressed by doubling it.<br>
 In a double-quoted string, a double-quote can be expressed by doubling it. Double-quoted strings can span multiple lines.
 
 Explicit Unicode characters can be specified by using # followed by an integer codepoint (decimal or hexadecimal). Characters specified this way are always understood as Unicode codepoint.
