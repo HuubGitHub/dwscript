@@ -60,7 +60,7 @@ Print("Hello
 World");
 }}}
 
-Finally indented strings can also be defined with #", the compiler will then ignore common indentation, and will additionally ignore and empty first line, so you can also write
+Finally indented strings can also be defined with #" or #', the compiler will then ignore common indentation, and will additionally ignore an empty first line, so you can also write
 
 {{{
 Print(#"
