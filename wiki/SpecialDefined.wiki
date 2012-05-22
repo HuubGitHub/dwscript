@@ -2,7 +2,7 @@
 
 == Defined() ==
 
-This [SpecialFunctions function] has the following forms:
+This [SpecialFunctions special function] has the following forms:
 
 {{{
 function Defined( string_value ) : Boolean;
