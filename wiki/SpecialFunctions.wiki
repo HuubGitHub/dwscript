@@ -9,7 +9,7 @@ Special functions benefit from compiler magic
  * Assigned
  * Dec
  * Declared
- * [SpecialDefined Defined()], checks if a symbol is defined or a variable of external class type is defined
+ * [SpecialDefined Defined()], checks if a symbol is defined or a value of external class type is defined
  * High
  * Inc
  * Length
