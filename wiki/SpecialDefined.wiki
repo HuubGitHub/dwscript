@@ -1,8 +1,8 @@
 #summary Defined() Special function.
 
-== Defined==
+== Defined() ==
 
-This function has the following forms:
+This [SpecialFunctions function] has the following forms:
 
 {{{
 function Defined( string_value ) : Boolean;
