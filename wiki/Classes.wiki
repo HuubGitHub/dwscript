@@ -8,6 +8,8 @@ Named constructors are supported, as well as class methods, meta-classes, virtua
 
 Visibilities are private, protected, public and published.
 
-Classes can implement [Interfaces].
+Classes can implement [Interfaces]n they can be partial.
 
 You can also declare class methods with "method" as in the Oxygene language, in addition to "procedure" and "function".
+
+Additionally classes can be marked as "external", in which case they're meant to expose classes that are not implemented in the script, and unlike interfaces, then can defined fields.
