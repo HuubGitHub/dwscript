@@ -1,0 +1,9 @@
+#summary Built-in functions and types
+
+== Built-in functions and types ==
+
+Several functions and types are built into the language and don't have to be declared
+
+     * [SpecialFunctions Special functions]
+     * [InternalFunctions Internal functions]
+     * [BuiltInTypes Built-in types]
