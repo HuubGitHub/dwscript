@@ -7,7 +7,7 @@ Special functions benefit from compiler magic
  * Abs 
  * Assert
  * Assigned
- * [SpecialConditionalDefined ConditionalDefined()], checks if symbal is defined at runtime
+ * [SpecialConditionalDefined ConditionalDefined()], checks if symbol is defined at runtime
  * Dec
  * Declared
  * [SpecialDefined Defined()], checks if a symbol is defined (at compile time) or if an expression is defined
