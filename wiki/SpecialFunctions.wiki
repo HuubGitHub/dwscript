@@ -7,10 +7,10 @@ Special functions benefit from compiler magic
  * Abs 
  * Assert
  * Assigned
- * ConditionalDefined
+ * [SpecialConditionalDefined ConditionalDefined()], checks if symbal is defined at runtime
  * Dec
  * Declared
- * [SpecialDefined Defined()], checks if a symbol is defined or a value of external class type is defined
+ * [SpecialDefined Defined()], checks if a symbol is defined (at compile time) or if an expression is defined
  * High
  * Inc
  * Length
