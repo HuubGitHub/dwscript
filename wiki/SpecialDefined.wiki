@@ -7,10 +7,10 @@ This [SpecialFunctions special function] has the following forms:
 {{{
 function Defined( string_value ) : Boolean;
 }}}
-Indicates if the symbol whose name is specified by the string is defined.
+Indicates if the conditional whose name is specified by the string is defined.
 
  * When used in a conditional directive, its value is evaluated for the code that has already been parsed up to the point where the directive is encountered.
- * When used in code, its value is evaluated at runtime, and depends on the symbols known at that point.
+ * When used in code, its value is evaluated at runtime, and depends on the conditionals still active at that point.
 
 {{{
 function Defined( value_of_type_external_class ) : Boolean;
