@@ -10,14 +10,16 @@
 
 This section hasn't been formatted yet and is a copy-paste from the dwsMathsFunctions.pas source.
 
- * RegisterInternalBoolFunction(TOddFunc, 'Odd', ['i', cInteger], [iffStateLess]);
+ * [InternalOdd Odd](i : Integer) : returns True if i is odd
 
- * RegisterInternalFloatFunction(TSinFunc, 'Sin', ['a', cFloat], [iffStateLess]);
- * RegisterInternalFloatFunction(TSinhFunc, 'Sinh', ['a', cFloat], [iffStateLess]);
- * RegisterInternalFloatFunction(TCosFunc, 'Cos', ['a', cFloat], [iffStateLess]);
- * RegisterInternalFloatFunction(TCoshFunc, 'Cosh', ['a', cFloat], [iffStateLess]);
- * RegisterInternalFloatFunction(TTanFunc, 'Tan', ['a', cFloat], [iffStateLess]);
- * RegisterInternalFloatFunction(TTanhFunc, 'Tanh', ['a', cFloat], [iffStateLess]);
+ * [InternalCos Cos](a : Float) : return the cosine of an angle in radians
+ * [InternalSin Sin](a : Float) : return the sine of an angle in radians
+ * [InternalTan Tan](a : Float) : return the tangent of an angle in radians
+
+ * [InternalSinh Cosh](a : Float) : returns the hyperbolic cosine of a
+ * [InternalSinh Sinh](a : Float) : returns the hyperbolic sine of a
+ * [InternalSinh Tanh](a : Float) : returns the hyperbolic tangent of a
+
  * RegisterInternalFloatFunction(TArcSinFunc, 'ArcSin', ['v', cFloat], [iffStateLess]);
  * RegisterInternalFloatFunction(TArcSinhFunc, 'ArcSinh', ['v', cFloat], [iffStateLess]);
  * RegisterInternalFloatFunction(TArcCosFunc, 'ArcCos', ['v', cFloat], [iffStateLess]);
@@ -26,6 +28,7 @@ This section hasn't been formatted yet and is a copy-paste from the dwsMathsFunc
  * RegisterInternalFloatFunction(TArcTan2Func, 'ArcTan2', ['y', cFloat, 'x', cFloat], [iffStateLess]);
  * RegisterInternalFloatFunction(TArcTanhFunc, 'ArcTanh', ['v', cFloat], [iffStateLess]);
  * RegisterInternalFloatFunction(TCotanFunc, 'Cotan', ['a', cFloat], [iffStateLess]);
+
  * RegisterInternalFloatFunction(THypotFunc, 'Hypot', ['x', cFloat, 'y', cFloat], [iffStateLess]);
  * RegisterInternalFloatFunction(TFactorialFunc, 'Factorial', ['v', cInteger], [iffStateLess]);
  * RegisterInternalFloatFunction(TExpFunc, 'Exp', ['v', cFloat], [iffStateLess]);
@@ -78,7 +81,7 @@ This section hasn't been formatted yet and is a copy-paste from the dwsMathsFunc
 
 This section hasn't been formatted yet and is a copy-paste from the dwsStringFunctions.pas source.
 
- * RegisterInternalStringFunction(TChrFunc, 'Chr', ['i', cInteger], [iffStateLess]);
+ * [InternalChr Chr](i : Integer) : returns the string corresponding to the given Unicode codepoint (supports the whole Unicode range)
 
  * RegisterInternalStringFunction(TIntToStrFunc, 'IntToStr', ['i', cInteger], [iffStateLess]);
  * RegisterInternalIntFunction(TStrToIntFunc, 'StrToInt', ['str', cString], [iffStateLess]);
@@ -171,8 +174,8 @@ These functions use a Float to represent a date time, similar to TDateTime (1 un
  * [InternalStrToDate StrToDate](str : String)
  * [InternalStrToDateDef StrToDateDef](str : String; def : Float)
 
- * [InternalDateToISO8601 DateToISO8601](dt : Float)
- * [InternalDateTimeToISO8601 DateTimeToISO8601](dt : Float)
+ * [InternalDateToISO8601 DateToISO8601](dt : Float) : converts a date to its ISO8601 string representation
+ * [InternalDateTimeToISO8601 DateTimeToISO8601](dt : Float) : converts a date time to its ISO8601 string representation
 
  * [InternalTimeToStr TimeToStr](dt : Float)
  * [InternalStrToTime StrToTime](str : String)
