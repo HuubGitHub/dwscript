@@ -1,0 +1,60 @@
+#summary Internal functions
+
+== Internal functions ==
+
+ * [InternalFunctions#Math_functions Maths functions]
+ * [InternalFunctions#String_functions String functions]
+ * [InternalFunctions#DateTime_functions DateTime functions]
+
+=== Maths functions ===
+
+=== String functions ===
+
+=== DateTime functions ===
+
+These functions use a Float to represent a date time, similar to TDateTime (1 unit per day, same time origin as in Delphi).
+
+ * [InternalNow Now]() : returns the current date time
+ * [InternalDate Date]() : returns the current date
+ * [InternalTime Time]() : returns the current time
+
+ * [InternalUTCDateTime UTCDateTime]()
+
+ * [InternalDateTimeToStr DateTimeToStr](dt : Float)
+ * [InternalStrToDateTime StrToDateTime](str : String)
+ * [InternalStrToDateTimeDef StrToDateTimeDef](str : String; def : Float)
+
+ * [InternalDateToStr DateToStr](dt : Float)
+ * [InternalStrToDate StrToDate](str : String)
+ * [InternalStrToDateDef StrToDateDef](str : String; def : Float)
+
+ * [InternalDateToISO8601 DateToISO8601](dt : Float)
+ * [InternalDateTimeToISO8601 DateTimeToISO8601](dt : Float)
+
+ * [InternalTimeToStr TimeToStr](dt : Float)
+ * [InternalStrToTime StrToTime](str : String)
+ * [InternalStrToTimeDef StrToTimeDef](str : String; def : Float)
+
+ * [InternalDayOfWeek DayOfWeek](dt : Float)
+ * [InternalDayOfTheWeek DayOfTheWeek](dt : Float)
+ * [InternalFormatDateTime FormatDateTime](frm: String; dt: Float)
+ * [InternalIsLeapYear IsLeapYear](year : Integer)
+ * [InternalIncMonth IncMonth](dt : Float; nb : Integer)
+ * [InternalDecodeDate DecodeDate](dt : Float; var y, m, d : Integer)
+ * [InternalEncodeDate EncodeDate](y, m, d) : Integer
+ * [InternalDecodeTime DecodeTime](dt : Float; var h, m, s, ms : Integer)
+ * [InternalEncodeTime EncodeTime](h, m, s, ms : Integer)
+
+ * [InternalFirstDayOfYear FirstDayOfYear](dt : Float)
+ * [InternalFirstDayOfNextYear FirstDayOfNextYear](dt : Float)
+ * [InternalFirstDayOfMonth FirstDayOfMonth](dt : Float)
+ * [InternalFirstDayOfNextMonth FirstDayOfNextMonth](dt : Float)
+ * [InternalFirstDayOfWeek FirstDayOfWeek](dt : Float)
+ * [InternalDayOfYear DayOfYear](dt : Float)
+ * [InternalMonthOfYear MonthOfYear](dt : Float)
+ * [InternalDayOfMonth DayOfMonth](dt : Float)
+
+ * [InternalDateToWeekNumber DateToWeekNumber](dt : Float)
+ * [InternalWeekNumber WeekNumber](dt : Float)
+ * [InternalDateToYearOfWeek DateToYearOfWeek](dt : Float)
+ * [InternalYearOfWeek YearOfWeek](dt : Float)
