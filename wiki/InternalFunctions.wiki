@@ -178,11 +178,11 @@ These functions use a Float to represent a date time, similar to TDateTime (1 un
  * [InternalStrToTime StrToTime](str : String)
  * [InternalStrToTimeDef StrToTimeDef](str : String; def : Float)
 
- * [InternalDayOfWeek DayOfWeek](dt : Float)
- * [InternalDayOfTheWeek DayOfTheWeek](dt : Float)
+ * [InternalDayOfWeek DayOfWeek](dt : Float) : returns the day of the week between 1 and 7 with Sunday as the first day
+ * [InternalDayOfTheWeek DayOfTheWeek](dt : Float) : returns the day of the week between 1 and 7 with Monday as the first day
  * [InternalFormatDateTime FormatDateTime](frm: String; dt: Float)
- * [InternalIsLeapYear IsLeapYear](year : Integer)
- * [InternalIncMonth IncMonth](dt : Float; nb : Integer)
+ * [InternalIsLeapYear IsLeapYear](year : Integer) : indicates if a year is a leap year
+ * [InternalIncMonth IncMonth](dt : Float; nb : Integer) : returns a date time offset by nb months (nb can be negative or positive)
  * [InternalDecodeDate DecodeDate](dt : Float; var y, m, d : Integer)
  * [InternalEncodeDate EncodeDate](y, m, d) : Integer
  * [InternalDecodeTime DecodeTime](dt : Float; var h, m, s, ms : Integer)
