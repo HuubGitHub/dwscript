@@ -12,9 +12,9 @@ This section hasn't been formatted yet and is a copy-paste from the dwsMathsFunc
 
  * [InternalOdd Odd](i : Integer) : returns True if i is odd
 
- * [InternalCos Cos](a : Float) : return the cosine of an angle in radians
- * [InternalSin Sin](a : Float) : return the sine of an angle in radians
- * [InternalTan Tan](a : Float) : return the tangent of an angle in radians
+ * [InternalCos Cos](a : Float) : returns the cosine of an angle in radians
+ * [InternalSin Sin](a : Float) : returns the sine of an angle in radians
+ * [InternalTan Tan](a : Float) : returns the tangent of an angle in radians
 
  * [InternalSinh Cosh](a : Float) : returns the hyperbolic cosine of a
  * [InternalSinh Sinh](a : Float) : returns the hyperbolic sine of a
