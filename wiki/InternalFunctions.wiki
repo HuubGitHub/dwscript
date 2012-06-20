@@ -10,7 +10,7 @@
 
 === String functions ===
 
-=== DateTime functions ===
+=== Date/Time functions ===
 
 These functions use a Float to represent a date time, similar to TDateTime (1 unit per day, same time origin as in Delphi).
 
