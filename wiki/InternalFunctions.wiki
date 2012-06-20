@@ -147,10 +147,11 @@ This section hasn't been formatted yet and is a copy-paste from the dwsStringFun
 
  * RegisterInternalStringFunction(TStrAfterFunc, 'StrAfter', ['str', cString, 'delimiter', cString], [iffStateLess]);
  * RegisterInternalStringFunction(TStrBeforeFunc, 'StrBefore', ['str', cString, 'delimiter', cString], [iffStateLess]);
- * RegisterInternalFunction(TStrSplitFunc, 'StrSplit', ['str', cString, 'delimiter', cString], 'array of string', []);
- * RegisterInternalStringFunction(TStrJoinFunc, 'StrJoin', ['strs', 'array of string', 'delimiter', cString], []);
 
- * RegisterInternalStringFunction(TReverseStringFunc, 'ReverseString', ['str', cString], [iffStateLess]);
+ * [InternalStrSplit StrSplit](str, delimiter : String) : returns the string splitted on the delimiters as an array of string
+ * [InternalStrJoin StrJoin](strs : array of string; delimiter : String) : joins the strings in the array, concatenating them with delimiter in between each item and returns the resulting string
+
+ * [InternalReverseString ReverseString](str : String) : returns a string that is a reversed version of str
 
 === Date/Time functions ===
 
@@ -160,11 +161,11 @@ These functions use a Float to represent a date time, similar to TDateTime (1 un
  * [InternalDate Date]() : returns the current date
  * [InternalTime Time]() : returns the current time
 
- * [InternalUTCDateTime UTCDateTime]()
+ * [InternalUTCDateTime UTCDateTime]() : returns the current UTC date time
 
- * [InternalDateTimeToStr DateTimeToStr](dt : Float)
- * [InternalStrToDateTime StrToDateTime](str : String)
- * [InternalStrToDateTimeDef StrToDateTimeDef](str : String; def : Float)
+ * [InternalDateTimeToStr DateTimeToStr](dt : Float) : converts a date time to a string representation
+ * [InternalStrToDateTime StrToDateTime](str : String) : parses a string representing a date time
+ * [InternalStrToDateTimeDef StrToDateTimeDef](str : String; def : Float) : parses a string representing a date time, returns def if the string isn't a valid date time
 
  * [InternalDateToStr DateToStr](dt : Float)
  * [InternalStrToDate StrToDate](str : String)
