@@ -4,7 +4,7 @@
 
  * [InternalFunctions#Math_functions Maths functions]
  * [InternalFunctions#String_functions String functions]
- * [InternalFunctions#DateTime_functions DateTime functions]
+ * [InternalFunctions#Date/Time_functions DateTime functions]
 
 === Maths functions ===
 
