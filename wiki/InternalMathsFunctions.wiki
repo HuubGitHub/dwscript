@@ -1,0 +1,72 @@
+#summary Internal Maths Functions
+
+=== Internal Maths functions ===
+
+This section hasn't been formatted yet and is a copy-paste from the dwsMathsFunctions.pas source.
+
+ * [InternalOdd Odd](i : Integer) : returns True if i is odd
+
+ * [InternalCos Cos](a : Float) : returns the cosine of an angle in radians
+ * [InternalSin Sin](a : Float) : returns the sine of an angle in radians
+ * [InternalTan Tan](a : Float) : returns the tangent of an angle in radians
+
+ * [InternalSinh Cosh](a : Float) : returns the hyperbolic cosine of a
+ * [InternalSinh Sinh](a : Float) : returns the hyperbolic sine of a
+ * [InternalSinh Tanh](a : Float) : returns the hyperbolic tangent of a
+
+ * RegisterInternalFloatFunction(TArcSinFunc, 'ArcSin', ['v', cFloat], [iffStateLess]);
+ * RegisterInternalFloatFunction(TArcSinhFunc, 'ArcSinh', ['v', cFloat], [iffStateLess]);
+ * RegisterInternalFloatFunction(TArcCosFunc, 'ArcCos', ['v', cFloat], [iffStateLess]);
+ * RegisterInternalFloatFunction(TArcCoshFunc, 'ArcCosh', ['v', cFloat], [iffStateLess]);
+ * RegisterInternalFloatFunction(TArcTanFunc, 'ArcTan', ['v', cFloat], [iffStateLess]);
+ * RegisterInternalFloatFunction(TArcTan2Func, 'ArcTan2', ['y', cFloat, 'x', cFloat], [iffStateLess]);
+ * RegisterInternalFloatFunction(TArcTanhFunc, 'ArcTanh', ['v', cFloat], [iffStateLess]);
+ * RegisterInternalFloatFunction(TCotanFunc, 'Cotan', ['a', cFloat], [iffStateLess]);
+
+ * RegisterInternalFloatFunction(THypotFunc, 'Hypot', ['x', cFloat, 'y', cFloat], [iffStateLess]);
+ * RegisterInternalFloatFunction(TFactorialFunc, 'Factorial', ['v', cInteger], [iffStateLess]);
+ * RegisterInternalFloatFunction(TExpFunc, 'Exp', ['v', cFloat], [iffStateLess]);
+ * RegisterInternalFloatFunction(TLnFunc, 'Ln', ['v', cFloat], [iffStateLess]);
+ * RegisterInternalFloatFunction(TLog2Func, 'Log2', ['v', cFloat], [iffStateLess]);
+ * RegisterInternalFloatFunction(TLog10Func, 'Log10', ['v', cFloat], [iffStateLess]);
+ * RegisterInternalFloatFunction(TLogNFunc, 'LogN', ['n', cFloat, 'x', cFloat], [iffStateLess]);
+ * RegisterInternalFloatFunction(TPowerFunc, 'Power', ['base', cFloat, 'exponent', cFloat], [iffStateLess]);
+ * RegisterInternalFloatFunction(TIntPowerFunc, 'IntPower', ['base', cFloat, 'exponent', cInteger], [iffStateLess]);
+ * RegisterInternalFloatFunction(TSqrtFunc, 'Sqrt', ['v', cFloat], [iffStateLess]);
+ * RegisterInternalFloatFunction(TIntFunc, 'Int', ['v', cFloat], [iffStateLess]);
+ * RegisterInternalFloatFunction(TFracFunc, 'Frac', ['v', cFloat], [iffStateLess]);
+ * RegisterInternalIntFunction(TFloorFunc, 'Floor', ['v', cFloat], [iffStateLess]);
+ * RegisterInternalIntFunction(TCeilFunc, 'Ceil', ['v', cFloat], [iffStateLess]);
+
+ * RegisterInternalFunction(TTruncFunc, 'Trunc', ['v', cFloat], cInteger, [iffStateLess]);
+ * RegisterInternalFunction(TRoundFunc, 'Round', ['v', cFloat], cInteger, [iffStateLess]);
+
+ * RegisterInternalFloatFunction(TDegToRadFunc, 'DegToRad', ['a', cFloat], [iffStateLess]);
+ * RegisterInternalFloatFunction(TRadToDegFunc, 'RadToDeg', ['a', cFloat], [iffStateLess]);
+
+ * RegisterInternalIntFunction(TSignFunc, 'Sign', ['v', cFloat], [iffStateLess, iffOverloaded]);
+ * RegisterInternalIntFunction(TSignIntFunc, 'Sign', ['v', cInteger], [iffStateLess, iffOverloaded]);
+
+ * RegisterInternalFloatFunction(TMaxFunc, 'Max', ['v1', cFloat, 'v2', cFloat], [iffStateLess, iffOverloaded]);
+ * RegisterInternalIntFunction(TMaxIntFunc, 'Max', ['v1', cInteger, 'v2', cInteger], [iffStateLess, iffOverloaded]);
+ * RegisterInternalFloatFunction(TMinFunc, 'Min', ['v1', cFloat, 'v2', cFloat], [iffStateLess, iffOverloaded]);
+ * RegisterInternalIntFunction(TMinIntFunc, 'Min', ['v1', cInteger, 'v2', cInteger], [iffStateLess, iffOverloaded]);
+ * RegisterInternalFloatFunction(TClampFunc, 'Clamp', ['v', cFloat, 'min', cFloat, 'max', cFloat], [iffStateLess]);
+
+ * RegisterInternalIntFunction(TMaxIntFunc, 'MaxInt', ['v1', cInteger, 'v2', cInteger], [iffStateLess]);
+ * RegisterInternalIntFunction(TMinIntFunc, 'MinInt', ['v1', cInteger, 'v2', cInteger], [iffStateLess]);
+ * RegisterInternalIntFunction(TClampIntFunc, 'ClampInt', ['v', cInteger, 'min', cInteger, 'max', cInteger], [iffStateLess]);
+
+ * RegisterInternalFloatFunction(TPiFunc, 'Pi', [], [iffStateLess]);
+
+ * RegisterInternalIntFunction(TGcdFunc, 'Gcd', ['a', cInteger, 'b', cInteger], [iffStateLess]);
+ * RegisterInternalIntFunction(TLcmFunc, 'Lcm', ['a', cInteger, 'b', cInteger], [iffStateLess]);
+ * RegisterInternalBoolFunction(TIsPrimeFunc, 'IsPrime', ['n', cInteger], [iffStateLess]);
+ * RegisterInternalIntFunction(TLeastFactorFunc, 'LeastFactor', ['n', cInteger], [iffStateLess]);
+
+ * RegisterInternalFloatFunction(TRandomFunc, 'Random', []);
+ * RegisterInternalIntFunction(TRandomIntFunc, 'RandomInt', ['range', cInteger]);
+ * RegisterInternalFunction(TRandomizeFunc, 'Randomize', [], '');
+ * RegisterInternalFloatFunction(TRandGFunc, 'RandG', ['mean', cFloat, 'stdDev', cFloat]);
+ * RegisterInternalIntFunction(TRandSeedFunc, 'RandSeed', [], [iffDeprecated]);
+ * RegisterInternalProcedure(TSetRandSeedFunc, 'SetRandSeed', ['seed', cInteger]);
