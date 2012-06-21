@@ -14,11 +14,12 @@ This section hasn't been formatted yet and is a copy-paste from the dwsMathsFunc
  * [InternalSinh Sinh](a : Float) : returns the hyperbolic sine of a
  * [InternalSinh Tanh](a : Float) : returns the hyperbolic tangent of a
 
- * RegisterInternalFloatFunction(TArcSinFunc, 'ArcSin', ['v', cFloat], [iffStateLess]);
+ * [InternalArcSin ArcSin](v : Float) : returns the arc-sine in radians
+ * [InternalArcCos ArcCos](v : Float) : returns the arc-cosine in radians
+ * [InternalArcTan ArcTan](v : Float) : returns the arc-tangent in radians
+
  * RegisterInternalFloatFunction(TArcSinhFunc, 'ArcSinh', ['v', cFloat], [iffStateLess]);
- * RegisterInternalFloatFunction(TArcCosFunc, 'ArcCos', ['v', cFloat], [iffStateLess]);
  * RegisterInternalFloatFunction(TArcCoshFunc, 'ArcCosh', ['v', cFloat], [iffStateLess]);
- * RegisterInternalFloatFunction(TArcTanFunc, 'ArcTan', ['v', cFloat], [iffStateLess]);
  * RegisterInternalFloatFunction(TArcTan2Func, 'ArcTan2', ['y', cFloat, 'x', cFloat], [iffStateLess]);
  * RegisterInternalFloatFunction(TArcTanhFunc, 'ArcTanh', ['v', cFloat], [iffStateLess]);
  * RegisterInternalFloatFunction(TCotanFunc, 'Cotan', ['a', cFloat], [iffStateLess]);
