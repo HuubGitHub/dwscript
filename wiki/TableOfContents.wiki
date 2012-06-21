@@ -38,7 +38,7 @@
      * [SpecialFunctions Special functions]
      * [InternalFunctions Internal functions]
        * [InternalMathsFunctions Maths]
-       * [InternalMathsFunctions Strings]
+       * [InternalStringFunctions Strings]
        * [InternalDateTimeFunctions Date/Time]
      * [BuiltInTypes Built-in types]
  * [FAQ]
