@@ -1,0 +1,50 @@
+#summary Internal Date/Time Functions
+
+=== Internal Date/Time functions ===
+
+These functions use a Float to represent a date time, similar to TDateTime (1 unit per day, same time origin as in Delphi).
+
+ * [InternalNow Now]() : returns the current date time
+ * [InternalDate Date]() : returns the current date
+ * [InternalTime Time]() : returns the current time
+
+ * [InternalUTCDateTime UTCDateTime]() : returns the current UTC date time
+
+ * [InternalDateTimeToStr DateTimeToStr](dt : Float) : converts a date time to a string representation
+ * [InternalStrToDateTime StrToDateTime](str : String) : parses a string representing a date time
+ * [InternalStrToDateTimeDef StrToDateTimeDef](str : String; def : Float) : parses a string representing a date time, returns def if the string isn't a valid date time
+
+ * [InternalDateToStr DateToStr](dt : Float)
+ * [InternalStrToDate StrToDate](str : String)
+ * [InternalStrToDateDef StrToDateDef](str : String; def : Float)
+
+ * [InternalDateToISO8601 DateToISO8601](dt : Float) : converts a date to its ISO8601 string representation
+ * [InternalDateTimeToISO8601 DateTimeToISO8601](dt : Float) : converts a date time to its ISO8601 string representation
+
+ * [InternalTimeToStr TimeToStr](dt : Float)
+ * [InternalStrToTime StrToTime](str : String)
+ * [InternalStrToTimeDef StrToTimeDef](str : String; def : Float)
+
+ * [InternalDayOfWeek DayOfWeek](dt : Float) : returns the day of the week between 1 and 7 with Sunday as the first day
+ * [InternalDayOfTheWeek DayOfTheWeek](dt : Float) : returns the day of the week between 1 and 7 with Monday as the first day
+ * [InternalFormatDateTime FormatDateTime](frm: String; dt: Float)
+ * [InternalIsLeapYear IsLeapYear](year : Integer) : indicates if a year is a leap year
+ * [InternalIncMonth IncMonth](dt : Float; nb : Integer) : returns a date time offset by nb months (nb can be negative or positive)
+ * [InternalDecodeDate DecodeDate](dt : Float; var y, m, d : Integer)
+ * [InternalEncodeDate EncodeDate](y, m, d) : Integer
+ * [InternalDecodeTime DecodeTime](dt : Float; var h, m, s, ms : Integer)
+ * [InternalEncodeTime EncodeTime](h, m, s, ms : Integer)
+
+ * [InternalFirstDayOfYear FirstDayOfYear](dt : Float)
+ * [InternalFirstDayOfNextYear FirstDayOfNextYear](dt : Float)
+ * [InternalFirstDayOfMonth FirstDayOfMonth](dt : Float)
+ * [InternalFirstDayOfNextMonth FirstDayOfNextMonth](dt : Float)
+ * [InternalFirstDayOfWeek FirstDayOfWeek](dt : Float)
+ * [InternalDayOfYear DayOfYear](dt : Float)
+ * [InternalMonthOfYear MonthOfYear](dt : Float)
+ * [InternalDayOfMonth DayOfMonth](dt : Float)
+
+ * [InternalDateToWeekNumber DateToWeekNumber](dt : Float)
+ * [InternalWeekNumber WeekNumber](dt : Float)
+ * [InternalDateToYearOfWeek DateToYearOfWeek](dt : Float)
+ * [InternalYearOfWeek YearOfWeek](dt : Float)
