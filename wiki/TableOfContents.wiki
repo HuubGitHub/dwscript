@@ -37,6 +37,9 @@
    * [BuiltIn Built-in functions and types]
      * [SpecialFunctions Special functions]
      * [InternalFunctions Internal functions]
+       * [InternalMathsFunctions Maths]
+       * [InternalMathsFunctions Strings]
+       * [InternalDateTimeFunctions Date/Time]
      * [BuiltInTypes Built-in types]
  * [FAQ]
  * Components
