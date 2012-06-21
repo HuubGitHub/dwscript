@@ -1,6 +1,6 @@
 #summary Internal String Functions
 
-=== String functions ===
+=== Internal String functions ===
 
 This section hasn't been formatted yet and is a copy-paste from the dwsStringFunctions.pas source.
 
