@@ -6,7 +6,7 @@ This section hasn't been formatted yet and is a copy-paste from the dwsStringFun
 
  * [InternalChr Chr](i : Integer) : returns the string corresponding to the given Unicode codepoint (supports the whole Unicode range)
 
- * RegisterInternalStringFunction(TIntToStrFunc, 'IntToStr', ['i', cInteger], [iffStateLess]);
+ * [InternalIntToStr IntToStr](i : Integer) : returns a string representing i in decimal notation
  * RegisterInternalIntFunction(TStrToIntFunc, 'StrToInt', ['str', cString], [iffStateLess]);
  * RegisterInternalIntFunction(TStrToIntDefFunc, 'StrToIntDef', ['str', cString, 'def', cInteger], [iffStateLess]);
  * RegisterInternalIntFunction(TStrToIntDefFunc, 'VarToIntDef', ['val', cVariant, 'def', cInteger], [iffStateLess]);
