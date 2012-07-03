@@ -4,7 +4,7 @@
 
 This section hasn't been formatted yet and is a copy-paste from the dwsStringFunctions.pas source.
 
- * [Internal_ _](str : String) : invokes the localizer on the specified string
+ * [InternalUnderScore _](str : String) : invokes the localizer on the specified string
 
  * [InternalChr Chr](i : Integer) : returns the string corresponding to the given Unicode codepoint (supports the whole Unicode range)
 
