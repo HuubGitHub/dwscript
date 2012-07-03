@@ -20,3 +20,4 @@ Special functions benefit from compiler magic
  * SizeOf
  * Sqr
  * Succ
+ * Swap
