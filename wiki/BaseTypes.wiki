@@ -22,7 +22,9 @@ The following types are optional:
 
 Decimal notation: 123, -456
 
-Hexadecimal notation: $1AF
+Hexadecimal notation: $1AF or 0x1AF
+
+Binary notation: 0b10011101
 
 === Float ===
 
