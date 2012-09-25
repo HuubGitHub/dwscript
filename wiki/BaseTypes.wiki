@@ -26,6 +26,8 @@ Hexadecimal notation: $1AF or 0x1AF
 
 Binary notation: 0b10011101
 
+For formatting purposes, the '_' character is accepted (and ignored) in Hexadecimal and Binary literals.
+
 === Float ===
 
 Presence of a '.' differentiates from an Integer.
