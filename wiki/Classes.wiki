@@ -7,6 +7,8 @@ Classes all derive from the root TObject class and follow the classic Delphi syn
 Named constructors are supported, as well as class methods, meta-classes, virtual methods, properties and destructors. Properties can optionally be array properties, and can feature an explicit index.
 
 Visibilities are private, protected, public and published.
+* script mode (or main program), private & protected are understood as strict private and strict protected
+* in build mode (in units), private & protected are understood in the classic fashion (implementations in the unit have access to private/protected members)
 
 Classes can implement [Interfaces]n they can be partial.
 
