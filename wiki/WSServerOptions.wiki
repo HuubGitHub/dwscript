@@ -59,7 +59,7 @@
 
   Zero is understood as infinite.
 
-  * === MaxBandwidth ===
+  * === MaxInputLength ===
 
   Maximum input http request length in bytes, 10 megabytes by default.
 
