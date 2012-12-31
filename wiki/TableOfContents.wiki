@@ -48,7 +48,7 @@
    * TdwsHtmlFilter
    * TdwsRestrictedFileSystem
  * Demos
-   * [DWSWebServer DWS's WebServer]
+   * [WebServer DWS's WebServer]
      * [DWSWSServerOptions Server options]
      * [DWSWSServiceOptions Service options]
      * [DWSWSCPUOptions CPU options]
