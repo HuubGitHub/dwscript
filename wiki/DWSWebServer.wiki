@@ -129,6 +129,6 @@ The options.json files contains the standard server options.
 
   * == LibraryPaths ==
 
-  Library paths, an array of strings. By default a '.lib' subfolder of the www root.
+  Library paths, an array of strings. None by default.
 
   Library paths can be outside of the www root.
