@@ -45,18 +45,11 @@ For a list of all options, see the following pages:
 
 The following limitations may be resolved in future versions, you can also speed up the process by helping resolve/implement them:
 
-* POST content data (f.i. application/x-www-form-urlencoded") isn't currently parsed, some self-standing, high performance MPL parser is needed (in your own project you can use existing parsers if you want, like Indy's)
-
-* WWW folder changes are tracked as whole, so any change will trigger recompilation of all scripts. This could be improved by extending TdwsDirectoryNotifier to provide the list actually changed files (through ReadDirectoryChangesW)
-
-* Default bundled units don't yet provide support for database or file access, you'll have to provide those yourself at the moment.
-
-* The COM connector isn't bundled in the demo, but if you include it that'll get you basic support for ADO databases among other things.
-
-* Logging options currently exposed are still minimal (THttpApi2Server exposes more, but you need to request them in code)
-
-* Authentication options haven't been exposed yet
-
-* Remote debugging hasn't been exposed yet
-
-* Realms/IP banning haven't been implemented, if you need them, you currently have to handle them in your FireWall instead.
+  * POST content data (f.i. application/x-www-form-urlencoded") isn't currently parsed, some self-standing, high performance MPL parser is needed (in your own project you can use existing parsers if you want, like Indy's)
+  * WWW folder changes are tracked as whole, so any change will trigger recompilation of all scripts. This could be improved by extending TdwsDirectoryNotifier to provide the list actually changed files (through ReadDirectoryChangesW)
+  * Default bundled units don't yet provide support for database or file access, you'll have to provide those yourself at the moment.
+  * The COM connector isn't bundled in the demo, but if you include it that'll get you basic support for ADO databases among other things.
+  * Logging options currently exposed are still minimal (THttpApi2Server exposes more, but you need to request them in code)
+  * Authentication options haven't been exposed yet
+  * Remote debugging hasn't been exposed yet
+  * Realms/IP banning haven't been implemented, if you need them, you currently have to handle them in your FireWall instead.
