@@ -105,3 +105,30 @@ The options.json files contains the standard server options.
   Zero is understood as no affinity.
 
 == DWScript options ==
+
+  * == TimeoutMSec ==
+
+  Script timeout in milliseconds, 3000 ms by default.
+
+  Zero is understood as unlimited, this is not recommended as a script entering an infinite loop would then stay there forever.
+
+  * == StachChunkSize ==
+
+  Size of stack growth chunks, 300 by default.
+
+  Higher values will result in more memory being allocated at once, which will be beneficial for scripts that use a lot of memory.
+  Lower values will result in less memory allocated at once, which will be beneficial for simple scripts and will also help keep server memory usage low.
+
+  * == StackMaxSize ==
+
+  Maximum stack size per script, 10000 by default.
+
+  * == MaxRecursionDepth ==
+
+  Maximum recursion depth per script, 512 by default.
+
+  * == LibraryPaths ==
+
+  Library paths, an array of strings. By default a '.lib' subfolder of the www root.
+
+  Library paths can be outside of the www root.
