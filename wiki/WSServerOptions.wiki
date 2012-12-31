@@ -8,11 +8,23 @@
 
   If zero, no http port is opened.
 
+  * === RelativeURI===
+
+  Relative URI for the HTTP server port, empty by default.
+
+  This specifies the relative URI, or URI root for the HTTP port, this features allows multiple application servers to operate on the same port.
+
   * === SSLPort ===
 
   HTTPS server port, 0 by default (not opened).
 
   You'll need to have a valid certificate registered or this will fail. See [http://msdn.microsoft.com/en-us/library/ms733791.aspx Configure a Port with an SSL Certificate], or you can use a GUI like [http://httpsysmanager.codeplex.com/ HTTPSysManager]. If you don't have a certificate, you can use a self-signed certificate (will result in browser warnings), buy one, or get a free one from [https://www.startssl.com/ StartCom].
+
+  * === SSLRelativeURI===
+
+  Relative URI for the HTTPS server port, empty by default.
+
+  This specifies the relative URI, or URI root for the HTTPS port, this features allows multiple application servers to operate on the same port.
 
   * === WWWPath ===
 
