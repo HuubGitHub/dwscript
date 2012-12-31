@@ -5,6 +5,10 @@
 
 DWScript WebServer is based on http.sys 2.0 and requires under Windows 2008, Vista or above.
 
+It is intended as an application server starting point. For production use, you're encouraged to add your own TdwsUnit and modules in it so you get more than baseline capability.
+
+Being http.sys 2.0 based means it can cooperate with other http.sys servers, including IIS, other applications or different instances of itself.
+
 = Built-in features =
 
 Serves a directory as www root, by default the www folder in the directory where the executable is configured, though that can be changed.
