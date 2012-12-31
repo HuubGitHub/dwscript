@@ -32,6 +32,8 @@
 
   If not defined or empty, will serve a www subfolder of the folder where the executable is.
 
+  This path can be referred to in the other paths options as "%www%".
+
   * === WorkerThreads ===
 
   Number of worker threads to use, 8 by default.
