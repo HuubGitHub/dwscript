@@ -27,8 +27,8 @@ The options.json files contains the standard server options.
 
 {{{
 {
-   "Server": { server options] },
-   "Service": { service options] },
+   "Server": { server options },
+   "Service": { service options },
    "CPU": { cpu options },
    "DWScript": { DWScript options }
 }
