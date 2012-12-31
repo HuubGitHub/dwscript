@@ -49,7 +49,7 @@
    * TdwsRestrictedFileSystem
  * Demos
    * [WebServer DWS's WebServer]
-     * [DWSWSServerOptions Server options]
-     * [DWSWSServiceOptions Service options]
-     * [DWSWSCPUOptions CPU options]
-     * [DWSWSDWScriptOptions DWScript options]
+     * [WSServerOptions Server options]
+     * [WSServiceOptions Service options]
+     * [WSCPUOptions CPU options]
+     * [WSDWScriptOptions DWScript options]
