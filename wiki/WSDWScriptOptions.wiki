@@ -8,7 +8,7 @@
 
   Zero is understood as unlimited, this is not recommended as a script entering an infinite loop would then stay there forever.
 
-  * == StachChunkSize ==
+  * == StackChunkSize ==
 
   Size of stack growth chunks, 300 by default.
 
