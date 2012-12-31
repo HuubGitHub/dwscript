@@ -1,0 +1,28 @@
+#summary DWScript sample WebServer
+#labels Featured
+
+= Introduction =
+
+DWScript WebServer is based on http.sys 2.0 and requires under Windows 2008, Vista or above.
+
+= Built-in features =
+
+Serves a directory as www root, by default the www folder in the directory where the executable is configured, though that can be changed.
+
+In that directory:
+* all files with the ".dws" extensions will be processed as scripts
+* all folders or file whose name starts with '.' are hidden and won't be served (if queried, the error will be 404)
+* other files that are present will be served "as they are"
+* when a directory is queried, server will serve index.dws, index.htm or index.html (first present, in that order)
+
+Deflate compression will be applied if the client browser accepts it for text files (mime types "text/*" and selected "application/*") larger than 1024 bytes.
+
+= Options.json =
+
+The options.json files contains the standard server options.
+
+{
+   "Server": { server options },
+   "CPU": { cpu options },
+   "DWScript": { DWScript options }
+}
