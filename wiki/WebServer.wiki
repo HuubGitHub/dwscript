@@ -53,3 +53,4 @@ The following limitations may be resolved in future versions, you can also speed
   * Authentication options haven't been exposed yet
   * Remote debugging hasn't been exposed yet
   * Realms/IP banning haven't been implemented, if you need them, you currently have to handle them in your FireWall instead.
+  * URL rewriting, currently you have to hardcode it in the Delphi source
