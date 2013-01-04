@@ -2,6 +2,10 @@
 
 == Server options ==
 
+  * === Name ===
+
+  Server Name to report in HTTP responses & logs. 'DWScript' by default.
+
   * === Port ===
 
   HTTP server port, 888 by default.
