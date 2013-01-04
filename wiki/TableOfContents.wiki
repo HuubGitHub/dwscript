@@ -47,6 +47,10 @@
    * TdwsUnit
    * TdwsHtmlFilter
    * TdwsRestrictedFileSystem
+ * Modules
+   * [dwsDataBase]
+   * [dwsSystemInfo]
+   * [dwsWebEnvironment]
  * Demos
    * [WebServer DWS's WebServer]
      * [WSServerOptions Server options]
