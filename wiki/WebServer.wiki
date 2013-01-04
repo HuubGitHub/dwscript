@@ -19,7 +19,7 @@ In that directory:
   * other files that are present will be served "as they are"
   * when a directory is queried, server will serve index.dws, index.htm or index.html (first present, in that order)
 
-Deflate compression will be applied if the client browser accepts it for text files (mime types "text/*" and selected "application/*") larger than 1024 bytes.
+Deflate compression will be applied if the client browser accepts it for text files (mime types "text/`*`" and selected "application/`*`") larger than 1024 bytes.
 
 = Options.json =
 
