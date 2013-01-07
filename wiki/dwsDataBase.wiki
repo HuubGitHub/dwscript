@@ -1,0 +1,26 @@
+#summary dwsDataBase module
+
+= Introduction =
+
+This module exposes simple classes that allow to connect and run query against various databases.
+
+  * [DataBase]
+  * [DataSet]
+  * [DataField]
+
+= Details =
+
+Currently supported database drivers:
+
+  * [http://synopse.info/ Synopse] / [http://synopse.info/fossil/wiki?name=SQLite3+Framework mORMot]
+    * SQLite 3 (native)
+    * ODBC (native)
+    * Oracle (native)
+    * OleDB
+      * Oracle via OleDB
+      * MSOracle
+      * MSSQL
+      * MySQL
+      * Jet (Access)
+      * AS400
+      * ODBC via OleDB
