@@ -48,11 +48,11 @@
    * TdwsHtmlFilter
    * TdwsRestrictedFileSystem
  * Modules
-   * [COMConnector]
-   * [DataBase]
-   * [JSONConnector]
-   * [SystemInfo]
-   * [WebEnvironment]
+   * [dwsCOMConnector COMConnector]
+   * [dwsDataBase DataBase]
+   * [dwsJSONConnector JSONConnector]
+   * [dwsSystemInfo SystemInfo]
+   * [dwsWebEnvironment WebEnvironment]
  * Demos
    * [WebServer DWS's WebServer]
      * [WSServerOptions Server options]
