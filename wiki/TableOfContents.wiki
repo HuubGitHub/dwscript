@@ -50,6 +50,9 @@
  * Modules
    * [dwsCOMConnector COMConnector]
    * [dwsDataBase DataBase]
+     * [DataBase]
+     * [DataSet]
+     * [DataField]
    * [dwsJSONConnector JSONConnector]
    * [dwsSystemInfo SystemInfo]
    * [dwsWebEnvironment WebEnvironment]
