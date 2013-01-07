@@ -1,0 +1,21 @@
+#summary Exposes a DataSet or database cursor
+
+= Navigation methods =
+
+  * `Next`
+  * `EOF : Boolean`
+  * *destructor* Close
+
+= Field access =
+
+  * `Fields[index : Integer] : `[DataField]
+  * `FieldCount : Integer`
+  * `IndexOfField(fieldName : String) : Integer`
+  * `FieldByName(fieldName : String) : `[DataField]
+  * `FieldName(index : Integer) : String`
+
+= Direct value access = 
+
+  * `AsInteger(index : Integer)`/`AsInteger(fieldName : String) : Integer`
+  * `AsString(index : Integer)`/`AsString(fieldName : String) : String`
+  * `AsFloat(index : Integer)`/`AsFloat(fieldName : String) : Float`
