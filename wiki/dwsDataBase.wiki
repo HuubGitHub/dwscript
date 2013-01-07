@@ -8,6 +8,28 @@ This module exposes simple classes that allow to connect and run query against v
   * [DataSet]
   * [DataField]
 
+= Sample =
+
+Connect to a local SQLite database and print two fields from a table
+
+{{{
+var db := DataBase.Create('SQLite', 'd:\db\base.sql3');
+var query := db.Query('select field1, field2 from mytable where field3=?', ['filter']);
+while not query.EOF do begin
+   PrintLn(query.AsString(0)+', '+query.AsString(1));
+   query.Next;
+end;
+}}}
+
+Delete everything from mytable and insert in a transaction
+
+{{{
+db.BeginTransaction;
+db.Exec('delete from mytable');
+db.Exec('insert into mytable (field1, field3) values (?, ?)', ['hello', 'world']);
+db.Commit.
+}}}
+
 = Details =
 
 Currently supported database drivers:
