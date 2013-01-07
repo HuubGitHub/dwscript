@@ -30,6 +30,9 @@ db.Exec('insert into mytable (field1, field3) values (?, ?)', ['hello', 'world']
 db.Commit.
 }}}
 
+Datasets and databases are automatically closed, but you can use the *Close* destructor to force-close at any time.
+Transactions that not manually committed are automatically rollbacked.
+
 = Details =
 
 Currently supported database drivers:
