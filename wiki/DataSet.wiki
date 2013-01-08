@@ -12,7 +12,6 @@
   * `FieldCount : Integer`
   * `IndexOfField(fieldName : String) : Integer`
   * `FieldByName(fieldName : String) : `[DataField]
-  * `FieldName(index : Integer) : String`
 
 = Direct value access = 
 
