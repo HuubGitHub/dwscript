@@ -49,4 +49,4 @@ Currently supported database drivers:
       * AS400
       * ODBC (via OleDB)
   *[http://sourceforge.net/projects/uib/ Unified InterBase] / [http://www.progdigy.com/ progdigy]
-    * UIB (FireBird and Interbase)
+    * UIB ([http://www.firebirdsql.org/ FireBird] and [http://www.embarcadero.com/products/interbase Interbase])
