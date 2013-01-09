@@ -2,8 +2,9 @@
 
 = Navigation methods =
 
-  * `Next`
+  * `Step : Boolean`
   * `EOF : Boolean`
+  * `Next`
   * *destructor* Close
 
 = Field access =
