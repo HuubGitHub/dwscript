@@ -37,14 +37,16 @@ Transactions that not manually committed are automatically rollbacked.
 Currently supported database drivers:
 
   * [http://synopse.info/ Synopse] / [http://synopse.info/fossil/wiki?name=SQLite3+Framework mORMot]
-    * SQLite 3 (native)
+    * SQLite (native)
     * ODBC (native)
     * Oracle (native)
     * OleDB
-      * Oracle via OleDB
+      * Oracle (via OleDB)
       * MSOracle
       * MSSQL
       * MySQL
       * Jet (Access)
       * AS400
-      * ODBC via OleDB
+      * ODBC (via OleDB)
+  *[http://sourceforge.net/projects/uib/ Unified InterBase] / [http://www.progdigy.com/ progdigy]
+    * UIB (FireBird and Interbase)
