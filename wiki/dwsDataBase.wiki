@@ -50,5 +50,5 @@ Currently supported database drivers:
       * Jet (Access)
       * AS400
       * ODBC (via OleDB)
-  *[http://sourceforge.net/projects/uib/ Unified InterBase] / [http://www.progdigy.com/ progdigy]
-    * UIB ([http://www.firebirdsql.org/ FireBird] and [http://www.embarcadero.com/products/interbase Interbase])
+  *[http://sourceforge.net/projects/uib/ Unified Interbase] / [http://www.progdigy.com/ progdigy]
+    * UIB (native [http://www.firebirdsql.org/ FireBird] and [http://www.embarcadero.com/products/interbase Interbase])
