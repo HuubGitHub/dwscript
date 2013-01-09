@@ -17,6 +17,7 @@ var db := DataBase.Create('SQLite', ['d:\db\base.sql3']);
 var query := db.Query('select field1, field2 from mytable where field3=?', ['filter']);
 while query.Step do
    PrintLn(query.AsString(0)+', '+query.AsString(1));
+query.Close; // optional, only if you need it closed ASAP
 }}}
 
 Delete everything from mytable and insert in a transaction
@@ -25,7 +26,7 @@ Delete everything from mytable and insert in a transaction
 db.BeginTransaction;
 db.Exec('delete from mytable');
 db.Exec('insert into mytable (field1, field3) values (?, ?)', ['hello', 'world']);
-db.Commit.
+db.Commit;
 }}}
 
 Datasets and databases are automatically closed, but you can use the *Close* destructor to force-close at any time.
