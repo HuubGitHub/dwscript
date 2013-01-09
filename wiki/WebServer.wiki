@@ -47,11 +47,11 @@ For a list of all options, see the following pages:
 
 The following limitations may be resolved in future versions, you can also speed up the process by helping resolve/implement them:
 
-  * POST content data (f.i. application/x-www-form-urlencoded") isn't currently parsed, some self-standing, high performance MPL parser is needed (in your own project you can use existing parsers if you want, like Indy's)
-  * The COM connector isn't bundled in the demo, but if you include it that'll get you basic support for ADO databases, WMI and other things. Be aware that it will break sandboxing, so only activate if you trust the scripts that are run on the server.
-  * Logging options currently exposed are still minimal (THttpApi2Server exposes more, but you need to request them in code)
+  * Standard package system hasn't been implemented yet.
+  * POST content data (f.i. application/x-www-form-urlencoded) isn't currently parsed, some self-standing, high performance parser is needed (preferably MPL 1.1 compatible), in your own project you can use existing parsers if you want, like Indy's
+  * Logging options currently exposed are still minimal (THttpApi2Server exposes more, but you need to request them in Delphi code)
   * Remote debugging hasn't been exposed yet
-  * Realms/IP banning haven't been implemented, if you need them, you currently have to handle them in your FireWall instead.
+  * Realms/IP banning haven't been implemented, if you need them, you currently have to handle them in your FireWall instead (which might be preferable anyway).
   * URL rewriting isn't standardized yet, currently you have to hardcode it in the Delphi source.
-  * Standard source/library package system hasn't been implemented yet.
-  * Static files are currently not compressed.
+  * Static text files are currently not compressed.
+  * The COM connector isn't bundled in the demo, but if you include it that'll get you ADO databases, WMI, etc. Be aware that it will break sandboxing, so only activate if you trust the scripts that are run on the server.
