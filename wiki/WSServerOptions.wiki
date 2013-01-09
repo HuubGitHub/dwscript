@@ -38,6 +38,12 @@
 
   This path can be referred to in the other paths options as "%www%".
 
+  * === Authentication ===
+
+  Array of enabled authentication schemes, allowed values are "Basic", "Digest", "NTLM", "Negotiate" and "*" for all.
+
+  When enabled, pages can check authentication through WebRequest.Authentication and AuthenticatedUser properties, and can request authentication with WebResponse.RequestAuthentication method.
+
   * === WorkerThreads ===
 
   Number of worker threads to use, 8 by default.
