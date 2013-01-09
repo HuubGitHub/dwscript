@@ -53,4 +53,5 @@ The following limitations may be resolved in future versions, you can also speed
   * Remote debugging hasn't been exposed yet
   * Realms/IP banning haven't been implemented, if you need them, you currently have to handle them in your FireWall instead.
   * URL rewriting isn't standardized yet, currently you have to hardcode it in the Delphi source.
-  * Standard sourec/library package system hasn't been implemented yet.
+  * Standard source/library package system hasn't been implemented yet.
+  * Static files are currently not compressed.
