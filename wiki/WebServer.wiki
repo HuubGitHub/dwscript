@@ -23,6 +23,8 @@ Changes to the WWW folder are monitored by the server, and will be honored ASAP.
 
 Deflate compression will be applied if the client browser accepts it for text files (mime types "text/`*`" and selected "application/`*`") larger than 1024 bytes.
 
+Windows single-sign-on authentication can be enabled (Server/Authentication option).
+
 = Options.json =
 
 The options.json files contains the standard server options in [http://json.org JSON] format. All options are optional and have default values.
