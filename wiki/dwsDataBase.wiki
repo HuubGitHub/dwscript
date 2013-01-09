@@ -15,10 +15,8 @@ Connect to a local SQLite database and print two fields from a table
 {{{
 var db := DataBase.Create('SQLite', ['d:\db\base.sql3']);
 var query := db.Query('select field1, field2 from mytable where field3=?', ['filter']);
-while not query.EOF do begin
+while query.Step do
    PrintLn(query.AsString(0)+', '+query.AsString(1));
-   query.Next;
-end;
 }}}
 
 Delete everything from mytable and insert in a transaction
