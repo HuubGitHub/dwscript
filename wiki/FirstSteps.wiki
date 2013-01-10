@@ -52,7 +52,7 @@ begin
 end;
 }}}
 
-== Parameters, Variables and Result Values ==
+== Parameters, Variables and Result ==
 
 You can access the parameters and global variables by their name under the same rules as in a normal script function (e. g. you can't read local variables of other procedures).
 
