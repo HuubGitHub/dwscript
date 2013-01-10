@@ -1,6 +1,7 @@
 #summary DWScript Table of Contents
 
  * [FirstSteps First Steps]
+   * [FirstSteps#Using_TProgramInfo_/_IInfo Using TProgramInfo / IInfo]
  * Language Reference
    * [Language Introduction]
    * [SourceStructure Source Structure]
