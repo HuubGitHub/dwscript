@@ -19,3 +19,8 @@
   * `AsInteger(index : Integer)`/`AsInteger(fieldName : String) : Integer`
   * `AsString(index : Integer)`/`AsString(fieldName : String) : String`
   * `AsFloat(index : Integer)`/`AsFloat(fieldName : String) : Float`
+
+= JSON generation =
+
+  * `Stringify`
+  * `StringifyAll`
