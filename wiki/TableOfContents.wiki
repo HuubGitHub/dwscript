@@ -63,6 +63,8 @@
    * [dwsJSONConnector JSONConnector]
    * [dwsSystemInfo SystemInfo]
    * [dwsWebEnvironment WebEnvironment]
+     * [WebRequest]
+     * [WebResponse]
  * Demos
    * [WebServer DWS's WebServer]
      * [WSServerOptions Server options]
