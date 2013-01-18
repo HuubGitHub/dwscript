@@ -1,0 +1,11 @@
+#summary WebAuthentication enumeration
+
+= Members =
+
+  * None
+  * Failed
+  * Basic
+  * Digest
+  * NTLM
+  * Negotiate
+  * Kerberos
