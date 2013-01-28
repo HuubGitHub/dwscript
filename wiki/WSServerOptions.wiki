@@ -81,4 +81,4 @@
 
   * === AutoRedirectFolders ===
 
-   If true (default values) folder requests that don't include the trailing path delimiter will automatically be redirected to the same URL with a trailing path delimiter via a 301 error.
+   If true (default value) folder requests that don't include the trailing path delimiter will automatically be redirected to the same URL with a trailing path delimiter via a 301 error.
