@@ -4,7 +4,7 @@
    * [FirstSteps#Using_TProgramInfo_/_IInfo Using TProgramInfo / IInfo]
    * [FirstSteps#Parameters,_Variables_and_Result Parameters, Variables and Result]
    * [FirstSteps#Arrays_and_Records Arrays and Records]
-   * [FirstSteps#Calling_Functions Calling Functions]
+   * [FirstSteps#Functions Calling Functions]
    * [FirstSteps#Debugger Debugger]
    * [FirstSteps#Filters Filters]
    * [FirstSteps#Connectors Connectors]
