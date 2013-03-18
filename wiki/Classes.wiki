@@ -22,9 +22,9 @@ Properties allow to encapsulate with a field-like syntax what can actually be me
 
 `property Name[args : Type] : Type read Getter write Setter; default;`
 
-* a property can optionally have arguments/indexes, such properties can optionally be marked as default
-* the Getter can be a method returning, a field, another property, or an expression (enclosed between brackets)
-* the Setter can be a method, a field, another property or an expression (enclosed between brackets, with Value being the pseudo-variable that receives the value assigned to the property)
+  * a property can optionally have arguments/indexes, such properties can optionally be marked as default
+  * the Getter can be a method returning, a field, another property, or an expression (enclosed between brackets)
+  * the Setter can be a method, a field, another property or an expression (enclosed between brackets, with Value being the pseudo-variable that receives the value assigned to the property)
 
 The following form
 `property Name : Type;`
