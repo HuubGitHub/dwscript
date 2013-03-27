@@ -17,6 +17,7 @@ In addition to *`Low`*, *`High`*, *`Length`* and *`Count`*, they also support th
  * *`Pop`*() : returns the last item and removes it from the array.
  * *`SetLength`*(newLength) : defines the length of a dynamic array
  * *`Swap`*(index1, index2) : swaps to items of specified indexes.
+ * *`Remove`*(`[startIndex, ]`item) : removes the item if it can be found and returns its previous index, returns a negative value if not found.
  * *`Reverse`*() : reverses the order of the items.
   
 You can use the *in* and *not in* operators to test the presence of an element in a static array.
