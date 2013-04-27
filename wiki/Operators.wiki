@@ -11,8 +11,8 @@
 ===Expression operators===
 
 || + || Addition & string concatenation ||
-|| - || Subtraction ||
-|| * || Multiplication ||
+|| `-` || Subtraction ||
+|| `*` || Multiplication ||
 || / || Division (floating-point) ||
 || div || Euclidean division ||
 || mod || Remainder of Euclidean division ||
