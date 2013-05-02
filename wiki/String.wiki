@@ -1,6 +1,8 @@
 #summary String (base type)
 
-=== String ===
+== String ===
+
+=== Description ===
 
 Strings can be delimited by a single *'* or a double-quote *"*.
 
@@ -27,3 +29,41 @@ Print(#"
    Hello
    World");
 }}}
+
+=== Methods ===
+
+*Informations*
+
+ * High
+ * Low
+ * Length
+
+*Testing*
+
+ * Contains
+ * StartsWith
+ * EndsWith
+
+*Case conversions*
+
+ * LowerCase: ASCII lower case
+ * UpperCase: ASCII upper case
+ * ToLower: locale lower case
+ * ToUpper: locale upper case
+
+*Conversions*
+
+ * ToBoolean
+ * ToInteger
+ * ToFloat
+
+*Manipulations*
+
+ * Trim: trim control characters left & right
+ * TrimLeft: trim left control characters
+ * TrimRight: trim right control characters
+ * Split: split a string on a separator and returns an array of strings
+ * Left: extract N characters to the left
+ * Right: extract N characters to the right
+ * Dupe: duplicate the string N times
+ * Reverse: returns a version of the string with the character reversed
