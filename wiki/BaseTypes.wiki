@@ -6,7 +6,7 @@ The following types are standard:
  * *[BaseTypes#Integer Integer]* : 64bit signed integer
  * *[BaseTypes#Float Float]* : double-precision floating-point
  * *[BaseTypes#Boolean Boolean]* : True/False
- * *[BaseTypes#String String]* : mutable, copy-on-write, UTF-16 string
+ * *[String]* : mutable, copy-on-write, UTF-16 string
 
 The following types are optional:
  * Variant
