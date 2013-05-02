@@ -1,0 +1,29 @@
+#summary String (base type)
+
+=== String ===
+
+Strings can be delimited by a single *'* or a double-quote *"*.
+
+In a single-quoted string, a single quote can be expressed by doubling it.<br>
+In a double-quoted string, a double-quote can be expressed by doubling it. Double-quoted strings can span multiple lines.
+
+Explicit Unicode characters can be specified by using # followed by an integer codepoint (decimal or hexadecimal). Characters specified this way are always understood as Unicode codepoint.
+
+{{{
+Print('Hello'#13#$0D'World');
+}}}
+
+Will print 'Hello' followed by CR+LF (ASCII code 13 and 10), followed by 'World', it can also be defined with
+
+{{{
+Print("Hello
+World");
+}}}
+
+Finally indented strings can also be defined with #" or #', the compiler will then ignore common indentation, and will additionally ignore an empty first line, so you can also write
+
+{{{
+Print(#"
+   Hello
+   World");
+}}}
