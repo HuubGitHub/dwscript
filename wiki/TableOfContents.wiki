@@ -13,6 +13,7 @@
    * [SourceStructure Source Structure]
    * [Types]
      * [BaseTypes Base Types]
+       * [String]
      * [Enumerations]
      * [StaticArrays Static Arrays]
      * [DynamicArrays Dynamic Arrays]
