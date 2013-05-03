@@ -18,7 +18,9 @@ For formatting purposes, the underscore '`_`' character is accepted (and ignored
 
 Conversions
 
- * ToString
+ * ToString: conversion to decimal string
+ * ToHex: conversion to hexadecimal string
+ * ToBin: conversion to binary string
 
 Maths
 
