@@ -1,0 +1,13 @@
+#summary Float (base type)
+
+== Float ==
+
+=== Description ===
+
+Presence of a '.' differentiates from an [Integer].
+
+Normal notation: 45.2304
+
+Exponential notation: 1.256e23
+
+=== Methods ===
