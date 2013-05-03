@@ -49,3 +49,7 @@ Information
  * Sign
  * IsNaN
  * IsFinite, IsInfinite
+
+Other
+
+ * Clamp
