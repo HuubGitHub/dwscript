@@ -3,9 +3,9 @@
 == Base Types ==
 
 The following types are standard:
- * *[BaseTypes#Integer Integer]* : 64bit signed integer
- * *[BaseTypes#Float Float]* : double-precision floating-point
- * *[BaseTypes#Boolean Boolean]* : True/False
+ * *[Integer]* : 64bit signed integer
+ * *[Float]* : double-precision floating-point
+ * *[Boolean]* : True/False
  * *[String]* : mutable, copy-on-write, 1-based, UTF-16 string
 
 The following types are optional:
@@ -35,11 +35,3 @@ Presence of a '.' differentiates from an Integer.
 Normal notation: 45.2304
 
 Exponential notation: 1.256e23
-
-=== Boolean ===
-
-Possible values are _*True*_ and _*False*_, case insensitive.
-
-When casting a Boolean as Integer, by convention _True_ maps to 1, _False_ maps to 0.
-
-When casting an Integer as Boolean, 0 maps to _False_, all other values map to _True_.
