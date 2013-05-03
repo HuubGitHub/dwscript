@@ -25,6 +25,7 @@ Trigonometry functions
  * Cotan
  * ArcTan2
  * Hypot
+ * DegToRad, RadToDeg
 
 Hyperbolic functions
 
