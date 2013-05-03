@@ -56,8 +56,8 @@ Print(#"
 *Conversions*
 
  * ToBoolean
- * ToInteger
- * ToFloat
+ * ToInteger, ToIntegerDef
+ * ToFloat, ToFloatDef
 
 *Manipulations*
 
