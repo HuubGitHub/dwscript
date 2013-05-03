@@ -19,8 +19,8 @@
 || sar || Bitwise shift arithmetic right ||
 || shr || Bitwise shift right ||
 || shl || Bitwise shift left ||
-|| in || Present in an array, set ||
-|| not in || Absence in an array, set ||
+|| in || Present in an array, set, or substring in a string ||
+|| not in || Absence in an array, set, or substring in a string ||
 || and || Boolean or bitwise AND ||
 || or || Boolean or bitwise OR ||
 || xor || Boolean or bitwise XOR ||
