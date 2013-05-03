@@ -6,7 +6,7 @@ Double precision floating point value
 
 === Description ===
 
-Presence of a '.' differentiates from an [Integer].
+Presence of a dot '.' differentiates literals from an [Integer].
 
 Normal notation: 45.2304
 
