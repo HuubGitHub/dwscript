@@ -15,3 +15,15 @@ Binary notation: 0b10011101
 For formatting purposes, the underscore '`_`' character is accepted (and ignored) in Hexadecimal and Binary literals.
 
 === Methods ===
+
+Conversions
+
+ * ToString
+
+Maths
+
+ * Factorial
+ * Power
+ * Sign
+ * IsPrime
+ * LeastFactor
