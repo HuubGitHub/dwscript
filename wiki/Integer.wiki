@@ -1,0 +1,8 @@
+#summary Integer (base type)
+
+== Integer ==
+
+=== Description ===
+
+
+=== Methods ===
