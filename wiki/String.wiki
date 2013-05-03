@@ -63,10 +63,12 @@ Print(#"
 
  * After: returns characters after a delimiter
  * Before: returns characters before a delimiter
+ * DeleteLeft: delete N characters to the left
+ * DeleteRight: delete N characters to the right
  * Dupe: duplicate the string N times
- * Left: extract N characters to the left
+ * Left: return N characters to the left
  * Reverse: returns a version of the string with the character reversed
- * Right: extract N characters to the right
+ * Right: return N characters to the right
  * Split: split a string on a separator and returns an array of strings
  * Trim: trim control characters left & right
  * TrimLeft: trim left control characters
