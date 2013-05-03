@@ -4,7 +4,7 @@
 
 === Description ===
 
-Strings are 1 based.
+Mutable, copy-on-write, 1-based, UTF-16 string type.
 
 Strings can be delimited by a single *'* or a double-quote *"*.
 
