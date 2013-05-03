@@ -14,7 +14,7 @@ The following types are optional:
  * RttiVariant : specializable interface to Delphi Rtti types
  * TComplex : double-precision complex numbers (dwsMathComplexFunctions)
  * Vector : double-precision 4D homogeneous vector (dwsMath3DFunctions)
- * Vector : double-precision 4D matrix (dwsMath3DFunctions)
+ * Matrix : double-precision 4D matrix (dwsMath3DFunctions)
 
 Presence of a '.' differentiates from an Integer.
 
