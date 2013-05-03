@@ -2,9 +2,9 @@
 
 == String ==
 
-=== Description ===
-
 Mutable, copy-on-write, 1-based, UTF-16 string type.
+
+=== Description ===
 
 Strings can be delimited by a single *'* or a double-quote *"*.
 
