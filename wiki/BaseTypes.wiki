@@ -16,20 +16,6 @@ The following types are optional:
  * Vector : double-precision 4D homogeneous vector (dwsMath3DFunctions)
  * Vector : double-precision 4D matrix (dwsMath3DFunctions)
 
-== Literals/Constants ==
-
-=== Integer ===
-
-Decimal notation: 123, -456
-
-Hexadecimal notation: $1AF or 0x1AF
-
-Binary notation: 0b10011101
-
-For formatting purposes, the underscore '`_`' character is accepted (and ignored) in Hexadecimal and Binary literals.
-
-=== Float ===
-
 Presence of a '.' differentiates from an Integer.
 
 Normal notation: 45.2304
