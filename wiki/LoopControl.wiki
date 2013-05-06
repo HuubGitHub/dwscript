@@ -16,3 +16,5 @@ All these loops can also be controlled by the following statements:
 
 Note that *`break`* and *`continue`* are statements and [ReservedNames reserved names]. They're not functions like in classic Delphi.
 It means that they're always and _unambiguously_ loop control instructions, and can't be overloaded by user functions or variables.
+
+The [exit] statement will also exit a loop as well as the whole function.
