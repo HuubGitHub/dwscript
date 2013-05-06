@@ -14,4 +14,6 @@ exit value;
 Result:=value; exit;
 }}}
 
-Note that *`exit`* and *`continue`* is a statement, and not a function like in classic Delphi. It means that it's always and _unambiguously_ specifies an exit, and can't be overloaded by user functions or variables.
+If *`exit`* is used from within a [TryFinallyExcept try..finally] statement, the code in the finally block will be executed before leaving the function.
+
+Note that *`exit`* is a statement, and not a function like in classic Delphi. It means that it's always and _unambiguously_ specifies an exit, and can't be overloaded by user functions or variables.
