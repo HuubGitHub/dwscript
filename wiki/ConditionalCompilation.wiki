@@ -25,6 +25,6 @@ Note that the above special functions can also be used in regular code, but then
 
 == Detecting DWSCRIPT and version ==
 
-The *`DWSCRIPT conditional is set by default and can be used to help make code compile across different Pascal compiler.
+The *`DWSCRIPT`* conditional is set by default and can be used to help make code compile across different Pascal compiler.
 
 The *`CompilerVersion`* constant is also defined, it's a numeric floating-point value, at the format YYYYMMDD.SUB, so compiler version 20130524.0 corresponds to the main version of 24 may 2013.
