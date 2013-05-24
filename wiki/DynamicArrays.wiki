@@ -18,6 +18,7 @@ In addition to *`Low`*, *`High`*, *`Length`* and *`Count`*, they also support th
  * *`Remove`*(`[startIndex, ]`item) : removes the item if it can be found and returns its previous index, returns a negative value if not found.
  * *`Reverse`*() : reverses the order of the items.
  * *`SetLength`*(newLength) : defines the length of a dynamic array
+ * *`Sort`*([compare function]) : sort an array according to the compare function, the comparison function can be omitted for arrays of String, Integer and Float.
  * *`Swap`*(index1, index2) : swaps to items of specified indexes.
   
 You can use the *in* and *not in* operators to test the presence of an element in a static array.
