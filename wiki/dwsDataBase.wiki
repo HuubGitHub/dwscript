@@ -34,6 +34,10 @@ Datasets and databases are automatically closed, but you can use the *Close* des
 
 Transactions that not manually committed are automatically rollbacked.
 
+= Usage =
+
+In order to use the DataBase object in a script, an TdwsDatabaseLib component must be linked to the TDelphiWebScript, and appropriate driver units (dwsUIBDatabase for the "UIB" driver, dwsSynSQLiteDatabase for the "SQLLite" driver etc) must be used by the host program.
+
 = Details =
 
 Currently supported database drivers:
