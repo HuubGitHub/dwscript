@@ -77,6 +77,8 @@ This section hasn't been formatted yet and is a copy-paste from the dwsStringFun
  * RegisterInternalStringFunction(TStrAfterFunc, 'StrAfter', ['str', cString, 'delimiter', cString], [iffStateLess]);
  * RegisterInternalStringFunction(TStrBeforeFunc, 'StrBefore', ['str', cString, 'delimiter', cString], [iffStateLess]);
 
+ * [InternalStrReplace StrReplace](str, sub, newSub : String) : returns a string where all occurences of sub in str are replace by newSub
+
  * [InternalStrSplit StrSplit](str, delimiter : String) : returns the string splitted on the delimiters as an array of string
  * [InternalStrJoin StrJoin](strs : array of string; delimiter : String) : joins the strings in the array, concatenating them with delimiter in between each item and returns the resulting string
 
