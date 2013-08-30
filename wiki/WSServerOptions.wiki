@@ -38,6 +38,10 @@
 
   This path can be referred to in the other paths options as "%www%".
 
+  * === Compression ===
+
+  Indicates if HTTP compression is supported by the server, True is the default value. HTTP Compression will reduce bandwidth at the expense of server CPU usage.
+
   * === Authentication ===
 
   Array of enabled authentication schemes, allowed values are "Basic", "Digest", "NTLM", "Negotiate" and "`*`" for all.
