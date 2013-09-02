@@ -50,7 +50,7 @@
 
   * === WorkerThreads ===
 
-  Number of worker threads to use, 8 by default.
+  Number of worker threads to use, 16 by default.
 
   Note that this number is not the number of simultaneous connections, but the number of script threads that can run at the same time. Optimal values will depend on your workload. High values will not be effective unless you have a high CPU core count or your scripts are "spending" most of their time waiting for I/O.
 
