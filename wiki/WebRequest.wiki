@@ -20,6 +20,9 @@ WebRequest is a static class (not instantiated)
   * *`Headers`* returns the raw CRLF separated list of all headers
   * *`Cookies`* returns the raw CRLF separated cookies information
   * *`QueryFields`* returns a CRLF separated list of all query string fields
+  * *`ContentType`* returns the Content-Type of the request
+  * *`ContentData`* returns the payload data of the request
+  * *`ContentLength`* returns the length of payload data of the request
   * *`Security`* returns a string describing connection encryption and strength, empty string if request was unencrypted http
   * *`UserAgent`* returns the client user agent as reported through HTTP header fields
   * *`AuthenticatedUser`* returns the WWW-Authenticate user (Domain\Login), empty string if non-authenticated
