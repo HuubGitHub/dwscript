@@ -35,4 +35,4 @@
 
   * == JIT ==
 
-  Boolean that specifies wether JIT compilation is active or not, true by default.
+  Boolean that specifies wether JIT compilation is active or not, false by default.
