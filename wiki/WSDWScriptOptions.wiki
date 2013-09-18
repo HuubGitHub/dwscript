@@ -28,3 +28,11 @@
   Library paths, an array of strings. None by default.
 
   Library paths can be outside of the www root.
+
+  * == PatternOpen, PatternEval, PatternClose ==
+
+  Allows adjusting HTMLFilter patterns, by default these are "<?pas", "=" and "?>" respectively.
+
+  * == JIT ==
+
+  Boolean that specifies wether JIT compilation is active or not, true by default.
