@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Exposes several static classes that provide information about the system and the application the script is running on.
+Exposes several classes that provide information about the system and the application the script is running on.
 
 = Classes =
 
