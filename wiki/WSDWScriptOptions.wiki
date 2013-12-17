@@ -33,6 +33,10 @@
 
   Allows adjusting HTMLFilter patterns, by default these are "<?pas", "=" and "?>" respectively.
 
+  * == Startup, Shutdown ==
+  
+  Define the name of the startup script (executed at server startup before any other script) and shutdown (executed at server shutdown); But default those are "%www%\.startup.pas" and "%www%\.shutdown.pas" respectively.
+
   * == JIT ==
 
   Boolean that specifies wether JIT compilation is active or not, false by default.
