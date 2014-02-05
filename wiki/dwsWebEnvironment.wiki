@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Exposes HTTP and WebRequest/WebResponse classes for use in WebServer
+Exposes HTTP and WebRequest/WebResponse classes for use in WebServer under the System.Net namespace.
 
 = Classes =
 
