@@ -1,0 +1,14 @@
+#summary Cryptography libary
+
+= Introduction =
+
+Exposes several classes that provide standard hashes and encryption algorithms
+
+= Classes =
+
+  * HashAlgorithm
+    * HashMD5
+    * HashSHA1
+    * HashSHA256
+  * EncryptionAlgorithm
+    * EncryptionAESSHA256Full
