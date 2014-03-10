@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Exposes several classes that provide standard hashes and encryption algorithms
+Exposes several classes that provide standard hashes and encryption algorithms under the *System.Crypto* unit name.
 
 = Classes =
 
