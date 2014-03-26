@@ -4,7 +4,13 @@
 
   * == TimeoutMSec ==
 
-  Script timeout in milliseconds, 3000 ms by default.
+  Script timeout in milliseconds for pages, 3000 ms by default.
+
+  Zero is understood as unlimited, this is not recommended as a script entering an infinite loop would then stay there forever.
+
+  * == WorkerTimeoutMSec ==
+
+  Script timeout in milliseconds for workers, startup & shutdown, 30000 ms by default.
 
   Zero is understood as unlimited, this is not recommended as a script entering an infinite loop would then stay there forever.
 
