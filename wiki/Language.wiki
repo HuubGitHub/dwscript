@@ -20,11 +20,11 @@ See LanguageTypes for more details.
 DWScript base types are *Integer*, *Float*, *Boolean* and *String*.<br>
 Optional base types are Variant, TComplex, TVector and TMatrix.
 
-Classes, arrays (fixed-size and dynamic), records (with methods), enumerations, meta-classes, interfaces and delegates are supported too.
+Classes, arrays (fixed-size and dynamic), records (with methods), enumerations, sets, meta-classes, interfaces and delegates are supported too.
 
 Dynamic arrays support a set of pseudo-methods and operators (Add, Delete, IndexOf, Length, SetLength in...), and are true reference types.
 
-As of v2.2, sets, generics and closures are not yet supported.
+As of v2.3, generics and closures are not yet supported.
 
 == Statements ==
 
@@ -43,7 +43,7 @@ See LanguageOperators for more details.
  * The *implies* operator is supported.
  * Operators can be overloaded.
 
-Since pointers don't exist in the language, the ^ and ^= operators are available for overloading.<br>
+Since pointers don't exist in the language, the `^` and `^`= operators are available for overloading.<br>
 Note that compound operators are currently not allowed on properties, due to ambiguity (should "obj.Prop += val" mean "obj.Prop := Add(obj.Prop, val)" or "obj.Prop.Add(val)" ?).
 
 == Code Structure ==
