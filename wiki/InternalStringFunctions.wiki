@@ -4,7 +4,7 @@
 
 This section is not completed yet. It basically consists of a slightly formated copy-paste from the dwsStringFunctions.pas source.
 
- * [InternalGetText _](str : String) : invokes the localizer on the specified string (GNU GetText like)
+ * [InternalGetText _](str : String) : invokes the localizer on the specified string ([http://en.wikipedia.org/wiki/Gettext GNU GetText] like)
 
  * [InternalChr Chr](i : Integer) : returns the string corresponding to the given Unicode codepoint (supports the whole Unicode range)
 
