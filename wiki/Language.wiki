@@ -3,7 +3,7 @@
 
 = Introduction =
 
-DWScript language is an Object Pascal dialect, it borrows most elements from Delphi, FreePascal and Prism/Oxygene, though with specificities of its own.
+DWScript language is an Object Pascal dialect, it borrows most elements from [http://en.wikipedia.org/wiki/Delphi_(programming_language) Delphi], [http://en.wikipedia.org/wiki/Free_Pascal FreePascal] and [http://en.wikipedia.org/wiki/Oxygene_(programming_language) Prism/Oxygene], though with specificities of its own.
 
 For Pascal users, you'll find below a summary of difference so you can get started right way.
 
