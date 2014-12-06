@@ -2,7 +2,7 @@
 
 == Operators ==
 
-==Unary operators==
+===Unary operators===
 
 || - || Negation ||
 || not || Logical or bitwise NOT ||
