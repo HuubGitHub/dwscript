@@ -2,84 +2,116 @@
 
 === Internal String functions ===
 
-This section hasn't been formatted yet and is a copy-paste from the dwsStringFunctions.pas source.
+This section is not completed yet. It basically consists of a slightly formated copy-paste from the dwsStringFunctions.pas source.
 
  * [InternalGetText _](str : String) : invokes the localizer on the specified string (GNU GetText like)
 
  * [InternalChr Chr](i : Integer) : returns the string corresponding to the given Unicode codepoint (supports the whole Unicode range)
 
  * [InternalIntToStr IntToStr](i : Integer) : returns a string representing i in decimal notation
- * RegisterInternalIntFunction(TStrToIntFunc, 'StrToInt', ['str', cString], [iffStateLess]);
- * RegisterInternalIntFunction(TStrToIntDefFunc, 'StrToIntDef', ['str', cString, 'def', cInteger], [iffStateLess]);
- * RegisterInternalIntFunction(TStrToIntDefFunc, 'VarToIntDef', ['val', cVariant, 'def', cInteger], [iffStateLess]);
 
- * RegisterInternalStringFunction(TIntToHexFunc, 'IntToHex', ['v', cInteger, 'digits', cInteger], [iffStateLess]);
- * RegisterInternalIntFunction(THexToIntFunc, 'HexToInt', ['hexa', cString], [iffStateLess]);
- * RegisterInternalStringFunction(TIntToBinFunc, 'IntToBin', ['v', cInteger, 'digits', cInteger], [iffStateLess]);
+ * [InternalStrToInt StrToInt](str : String) : returns the conversion the passed string to a number
 
- * RegisterInternalStringFunction(TBoolToStrFunc, 'BoolToStr', ['b', cBoolean], [iffStateLess]);
- * [InternalStrToBool StrToBool](str : String)
+ * [InternalStrToIntDef StrToIntDef](str : String; def : Integer) :
 
- * RegisterInternalStringFunction(TFloatToStrFunc, 'FloatToStr', ['f', cFloat, 'p=99', cInteger], [iffStateLess]);
- * RegisterInternalFloatFunction(TStrToFloatFunc, 'StrToFloat', ['str', cString], [iffStateLess]);
- * RegisterInternalFloatFunction(TStrToFloatDefFunc, 'StrToFloatDef', ['str', cString, 'def', cFloat], [iffStateLess]);
- * RegisterInternalFloatFunction(TStrToFloatDefFunc, 'VarToFloatDef', ['val', cVariant, 'def', cFloat], [iffStateLess]);
+ * [InternalVarToIntDef VarToIntDef](val : Variant; def : Integer) :
 
- * RegisterInternalStringFunction(TFormatFunc, 'Format', ['fmt', cString, 'args', 'array of const'], [iffStateLess]);
+ * [InternalIntToHex IntToHex] (v : Integer; digits : Integer) :
 
- * RegisterInternalStringFunction(TCharAtFunc, 'CharAt', ['s', cString, 'x', cInteger], [iffStateLess]);
+ * [InternalHexToInt HexToInt] (hexa : String]) :
 
- * RegisterInternalFunction(TDeleteFunc, 'Delete', ['@S', cString, 'index', cInteger, 'Len', cInteger], '');
- * RegisterInternalFunction(TInsertFunc, 'Insert', ['src', cString, '@S', cString, 'index', cInteger], '');
+ * [InternalIntToBin IntToBin] (v : Integer; digits : Integer) :
 
- * RegisterInternalStringFunction(TLowerCaseFunc, 'LowerCase', ['str', cString]);
- * RegisterInternalStringFunction(TAnsiLowerCaseFunc, 'AnsiLowerCase', ['str', cString]);
- * RegisterInternalStringFunction(TUpperCaseFunc, 'UpperCase', ['str', cString]);
- * RegisterInternalStringFunction(TAnsiUpperCaseFunc, 'AnsiUpperCase', ['str', cString]);
+ * [InternalBoolToStr BoolToStr] (b : Boolean) :
 
- * RegisterInternalIntFunction(TPosFunc, 'Pos', ['subStr', cString, 'str', cString], [iffStateLess]);
- * RegisterInternalIntFunction(TPosExFunc, 'PosEx', ['subStr', cString, 'str', cString, 'offset', cInteger], [iffStateLess]);
- * RegisterInternalIntFunction(TRevPosFunc, 'RevPos', ['subStr', cString, 'str', cString], [iffStateLess]);
+ * [InternalStrToBool StrToBool] (str : String) :
 
- * RegisterInternalFunction(TSetLengthFunc, 'SetLength', ['@S', cString, 'NewLength', cInteger], '');
+ * [InternalFloatToStr FloatToStr] (f : Float; p : Integer = 99) :
 
- * RegisterInternalStringFunction(TTrimLeftFunc, 'TrimLeft', ['str', cString], [iffStateLess]);
- * RegisterInternalStringFunction(TTrimRightFunc, 'TrimRight', ['str', cString], [iffStateLess]);
- * RegisterInternalStringFunction(TTrimFunc, 'Trim', ['str', cString], [iffStateLess]);
+ * [InternalStrToFloat StrToFloat] (str : String) :
 
- * RegisterInternalBoolFunction(TSameTextFunc, 'SameText', ['str1', cString, 'str2', cString], [iffStateLess]);
- * RegisterInternalIntFunction(TCompareTextFunc, 'CompareText', ['str1', cString, 'str2', cString], [iffStateLess]);
- * RegisterInternalIntFunction(TAnsiCompareTextFunc, 'AnsiCompareText', ['str1', cString, 'str2', cString], [iffStateLess]);
- * RegisterInternalIntFunction(TCompareStrFunc, 'CompareStr', ['str1', cString, 'str2', cString], [iffStateLess]);
- * RegisterInternalIntFunction(TAnsiCompareStrFunc, 'AnsiCompareStr', ['str1', cString, 'str2', cString], [iffStateLess]);
+ * [InternalStrToFloatDef StrToFloatDef] (str : String; def : Float) :
 
- * RegisterInternalBoolFunction(TIsDelimiterFunc, 'IsDelimiter', ['delims', cString, 'str', cString, 'index', cInteger], [iffStateLess]);
- * RegisterInternalIntFunction(TLastDelimiterFunc, 'LastDelimiter', ['delims', cString, 'str', cString], [iffStateLess]);
- * RegisterInternalIntFunction(TFindDelimiterFunc, 'FindDelimiter', ['delims', cString, 'str', cString, 'startIndex=1', cInteger], [iffStateLess]);
+ * [InternalVarToFloatDef VarToFloatDef] (val : Variant; def : Float) :
 
- * RegisterInternalStringFunction(TQuotedStrFunc, 'QuotedStr', ['str', cString, 'quoteChar=', cString], [iffStateLess]);
+ * [InternalFormat Format] (fmt : String; args : array of const) :
 
- * RegisterInternalStringFunction(TCopyFunc, 'Copy', ['str', cString, 'index', cInteger, 'Len', cInteger], [iffStateLess]);
+ * [InternalCharAt CharAt] (s : String; x : Integer) :
 
- * RegisterInternalStringFunction(TLeftStrFunc, 'LeftStr', ['str', cString, 'count', cInteger], [iffStateLess]);
- * RegisterInternalStringFunction(TRightStrFunc, 'RightStr', ['str', cString, 'count', cInteger], [iffStateLess]);
- * RegisterInternalStringFunction(TCopyFunc, 'MidStr', ['str', cString, 'start', cInteger, 'count', cInteger], [iffStateLess]);
- * RegisterInternalStringFunction(TSubStrFunc, 'SubStr', ['str', cString, 'start', cInteger], [iffStateLess]);
- * RegisterInternalStringFunction(TSubStringFunc, 'SubString', ['str', cString, 'start', cInteger, 'end', cInteger], [iffStateLess]);
+ * [InternalDelete Delete] (s : String; index : Integer; Len : Integer) :
 
- * RegisterInternalStringFunction(TStringOfCharFunc, 'StringOfChar', ['ch', cString, 'count', cInteger], []);
- * RegisterInternalStringFunction(TStringOfStringFunc, 'StringOfString', ['str', cString, 'count', cInteger], []);
- * RegisterInternalStringFunction(TStringOfStringFunc, 'DupeString', ['str', cString, 'count', cInteger], []);
+ * [InternalInsert Insert] (src : String; s : String; index : Integer]) :
 
- * RegisterInternalBoolFunction(TStrBeginsWithFunc, 'StrBeginsWith', ['str', cString, 'beginStr', cString], [iffStateLess]);
- * RegisterInternalBoolFunction(TStrEndsWithFunc, 'StrEndsWith', ['str', cString, 'endStr', cString], [iffStateLess]);
+ * [InternalLowerCase LowerCase] (str : String) :
 
- * RegisterInternalStringFunction(TStrAfterFunc, 'StrAfter', ['str', cString, 'delimiter', cString], [iffStateLess]);
- * RegisterInternalStringFunction(TStrBeforeFunc, 'StrBefore', ['str', cString, 'delimiter', cString], [iffStateLess]);
+ * [InternalAnsiLowerCase AnsiLowerCase] (str : String) :
+
+ * [InternalUpperCase UpperCase] (str : String) :
+
+ * [InternalAnsiUpperCase AnsiUpperCase] (str : String) :
+
+ * [InternalPos Pos] (subStr : String; str : String) :
+
+ * [InternalPosEx PosEx] (subStr : String; str : String; offset : Integer) :
+
+ * [InternalRevPos RevPos] (subStr : String; str : String) :
+
+ * [InternalSetLength SetLength] (S : String; NewLength : Integer):
+
+ * [InternalTrimLeft TrimLeft] (str : String) :
+
+ * [InternalTrimRight TrimRight] (str : String) :
+
+ * [InternalTrim Trim] (str : String) :
+
+ * [InternalSameText SameText] (str1 : String; str2 : String) :
+
+ * [InternalCompareText CompareText] (str1 : String; str2 : String) :
+
+ * [InternalAnsiCompareText AnsiCompareText] (str1 : String; str2 : String) :
+
+ * [InternalCompareStr CompareStr] (str1 : String; str2 : String) :
+
+ * [InternalAnsiCompareStr AnsiCompareStr] (str1 : String; str2 : String) :
+
+ * [InternalIsDelimiter IsDelimiter] (delims : String; str : String; index : Integer) :
+
+ * [InternalLastDelimiter LastDelimiter] (delims : String; str : String) :
+
+ * [InternalFindDelimiter FindDelimiter] (delims : String; str : String; startIndex : Integer = 1) :
+
+ * [InternalQuotedStr QuotedStr] (str : String; quoteChar : String) :
+
+ * [InternalCopy Copy] (str : String; index : Integer; Len : Integer) :
+
+ * [InternalLeftStr LeftStr] (str : String; count : Integer) :
+
+ * [InternalRightStr RightStr] (str : String; count : Integer) :
+
+ * [InternalMidStr MidStr] (str : String; start : Integer; count : Integer) :
+
+ * [InternalSubStr SubStr] (str : String; start : Integer) :
+
+ * [InternalSubString SubString] (str : String; start : Integer; end : Integer) :
+
+ * [InternalStringOfChar StringOfChar] (ch : String; count : Integer) :
+
+ * [InternalStringOfString StringOfString] (str : String; count : Integer) :
+
+ * [InternalDupeString DupeString] (str : String; count : Integer) :
+
+ * [InternalStrBeginsWith StrBeginsWith] (str : String; beginStr : String) :
+
+ * [InternalStrEndsWith StrEndsWith] (str : String; endStr : String) :
+
+ * [InternalStrAfter StrAfter] (str : String; delimiter : String) :
+
+ * [InternalStrBefore StrBefore] (str : String; delimiter : String) :
 
  * [InternalStrReplace StrReplace](str, sub, newSub : String) : returns a string where all occurences of sub in str are replace by newSub
 
  * [InternalStrSplit StrSplit](str, delimiter : String) : returns the string splitted on the delimiters as an array of string
+
  * [InternalStrJoin StrJoin](strs : array of string; delimiter : String) : joins the strings in the array, concatenating them with delimiter in between each item and returns the resulting string
 
  * [InternalReverseString ReverseString](str : String) : returns a string that is a reversed version of str
