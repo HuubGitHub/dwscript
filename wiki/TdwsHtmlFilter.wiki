@@ -1,9 +1,9 @@
 #summary Explanation about TdwsHtmlFilter
-== Introduction ==
+= Introduction =
 
 Hence the name, TdwsHtmlFilter does not filter HTML content, but instead processes script code tags inside a document. By default the document is assumed to be an HTML document, but in fact any text document can be used here.
 
-== Details ==
+= Details =
 
 The TdwsHtmlFilter scans a given text for a certain pattern. Once this pattern is found the script contained in the pattern is compiled and evaluated. By default the pattern is set to 
 {{{
