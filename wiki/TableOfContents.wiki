@@ -59,14 +59,16 @@
    * TdwsHtmlFilter
    * TdwsRestrictedFileSystem
  * Modules
+   * [dwsClassesLib Classes]
    * [dwsCOMConnector COMConnector]
+   * [dwsCrypto Crypto]
    * [dwsDataBase DataBase]
      * [DataBase]
      * [DataSet]
      * [DataField]
    * [dwsJSONConnector JSONConnector]
+   * [dwsSymbols Symbols]
    * [dwsSystemInfo SystemInfo]
-   * [dwsCrypto Crypto]
    * [dwsWebEnvironment WebEnvironment]
      * [WebRequest]
      * [WebResponse]
